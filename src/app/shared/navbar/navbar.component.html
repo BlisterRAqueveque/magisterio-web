@@ -1,0 +1,154 @@
+<div class="relative bg-white my-4 lg:flex flex-col justify-center items-center hidden" id="top-logo">
+    <img src="/assets/img/logo.svg" class="lg:absolute lg:top-4 lg:left-4 relative w-32">
+    <h1 class="text-center text-4xl">Mutual para el Magisterio Rionegrino</h1>
+    <br>
+    <h4 class="text-center text-2xl">Matricula n° 27 de la Provincia de Rio Negro.</h4>
+    <h4 class="text-center text-2xl">Resolución N° 1.074 del I.N.A.M. del 17/12/1979 - Ley 20.321</h4>
+</div>
+
+<div class="w-full lg:px-16 md:px-16 px-4 z-50 sticky top-0 pt-4" id="navbar">
+    <!-- Navbar LG -->
+    <div class="w-full bg-sky-300/80 backdrop-blur-md lg:flex justify-center items-center
+        rounded-2xl shadow-md relative hidden">
+        <img src="/assets/img/logo.svg" class="cursor-pointer absolute left-2 w-10 h-10 opacity-0
+            transition-all duration-300" id="logo" (click)="scrollToTop()">
+        <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer" (mouseover)="show(divInst)"
+            (mouseleave)="hide(divInst)">
+            <!-- Texto -->
+            <p>Institucional </p>
+            <ng-icon class="ml-2" name="heroChevronDownSolid" />
+
+            <!-- Menú -->
+            <div #divInst class="absolute top-14 bg-white
+                shadow-md rounded-sm pt-3 hide w-44">
+                <div class="w-auto flex flex-col">
+                    <a class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" routerLink="/home" fragment="somos">¿Quienes somos?</a>
+                    <a class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" routerLink="/home" fragment="principios">Principios</a>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" routerLink="/home" fragment="delegaciones">Delegaciones</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" routerLink="/home" fragment="resoluciones">Resoluciones</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer" (mouseover)="show(divTur)"
+            (mouseleave)="hide(divTur)">
+            <!-- Texto -->
+            <p>Turismo</p>
+            <ng-icon class="ml-2" name="heroChevronDownSolid" />
+
+            <!-- Menú -->
+            <div #divTur class="absolute top-14 bg-white
+                shadow-md rounded-sm pt-3 hide w-52">
+                <div class="w-auto flex flex-col">
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer">Turismo</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer">Paquetes turísticos</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer">Complejos y casa mutual</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
+            <!-- Texto -->
+            <p>Quiero ser socio / a </p>
+        </div>
+        <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
+            <!-- Texto -->
+            <p>Contacto </p>
+            <ng-icon class="ml-2" name="heroPhoneSolid" />
+        </div>
+    </div>
+
+    <!-- Navbar MD SM -->
+    <div class="w-full bg-sky-300/80 backdrop-blur-md flex justify-end items-center
+        rounded-2xl shadow-md relative lg:hidden">
+        <img src="/assets/img/logo.svg" class="cursor-pointer absolute left-2 w-10 h-10
+            transition-all duration-300" (click)="scrollToTop()">
+        <button (click)="isActive = !isActive" class="hamburger hamburger--spring" [ngClass]="{ 'is-active': isActive }"
+            type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+
+        <div class="absolute w-full bg-white top-16 shadow-md hide rounded-sm" [ngClass]="{ 'show': isActive }">
+            <div>
+
+                <!-- Menu institucional -->
+                <div class="flex justify-center flex-col items-center mx-10 relative py-4 cursor-pointer">
+                    <!-- Texto -->
+                    <div class="flex items-center justify-center" (click)="toggleDiv(resDivInst, resDivTur)">
+                        <p>Institucional </p>
+                        <ng-icon class="ml-2" name="heroChevronDownSolid" />
+                    </div>
+
+                    <!-- Menú -->
+                    <div class="hide" #resDivInst>
+                        <div class="w-auto flex flex-col">
+                            <a class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" routerLink="/home"
+                                (click)="isActive = false; toggleDiv(resDivInst)" fragment="somos">¿Quienes somos?</a>
+                            <a class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" routerLink="/home"
+                                (click)="isActive = false; toggleDiv(resDivInst)" fragment="principios">Principios</a>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" routerLink="/home"
+                                (click)="isActive = false; toggleDiv(resDivInst)" fragment="delegaciones">Delegaciones
+                            </p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" routerLink="/home"
+                                (click)="isActive = false; toggleDiv(resDivInst)" fragment="resoluciones">Resoluciones
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu turismo -->
+                <div class="flex flex-col justify-center items-center mx-10 relative py-4 cursor-pointer"
+                    (mouseover)="show(divTur)" (mouseleave)="hide(divTur)">
+                    <!-- Texto -->
+                    <div class="flex items-center justify-center" (click)="toggleDiv(resDivTur, resDivInst)">
+                        <p>Turismo</p>
+                        <ng-icon class="ml-2" name="heroChevronDownSolid" />
+                    </div>
+
+                    <!-- Menú -->
+                    <div #resDivTur class="hide">
+                        <div class="w-auto flex flex-col">
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200
+                                cursor-pointer" (click)="isActive = false; toggleDiv(resDivInst)">Turismo
+                            </p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200
+                                cursor-pointer" (click)="isActive = false; toggleDiv(resDivInst)">Paquetes
+                                turísticos</p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200
+                                cursor-pointer" (click)="isActive = false; toggleDiv(resDivInst)">
+                                Complejos y casa mutual</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
+                    <!-- Texto -->
+                    <p>Quiero ser socio / a </p>
+                </div>
+                <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
+                    <!-- Texto -->
+                    <p>Contacto </p>
+                    <ng-icon class="ml-2" name="heroPhoneSolid" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="relative bg-white my-4 lg:hidden flex-col justify-center items-center flex" id="top-logo">
+    <img src="/assets/img/logo.svg" class="lg:absolute lg:top-4 lg:left-4 relative w-32">
+    <h1 class="text-center text-2xl">Mutual para el Magisterio Rionegrino</h1>
+    <br>
+    <h4 class="text-center text-xl">Matricula n° 27 de la Provincia de Rio Negro.</h4>
+    <h4 class="text-center text-xl">Resolución N° 1.074 del I.N.A.M. del 17/12/1979 - Ley 20.321</h4>
+</div>
