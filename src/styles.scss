@@ -3,6 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "primeicons/primeicons.css";
+
 @import "./hamburgers/_sass/hamburgers/hamburgers.scss";
 
 @font-face {
@@ -34,4 +36,15 @@
 .show {
   grid-template-rows: 1fr;
   transition: all 0.3s ease;
+}
+
+/* Parallax effects */
+.parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 200px);
+  z-index: -1;
+  opacity: 0.2;
 }

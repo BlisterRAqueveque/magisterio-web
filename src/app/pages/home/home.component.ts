@@ -10,6 +10,8 @@ import { SomosComponent } from '../somos/somos.component';
 import { ActivatedRoute } from '@angular/router';
 import { PrincipiosComponent } from '../principios/principios.component';
 import { DelegacionesComponent } from '../delegaciones/delegaciones.component';
+import { ResolucionesComponent } from '../resoluciones/resoluciones.component';
+import { FooterComponent } from '../../shared/footer/footer.component';
 
 @Component({
   selector: 'app-home',
@@ -21,6 +23,8 @@ import { DelegacionesComponent } from '../delegaciones/delegaciones.component';
     SomosComponent,
     PrincipiosComponent,
     DelegacionesComponent,
+    ResolucionesComponent,
+    FooterComponent,
   ],
   providers: [provideIcons({ heroChevronDownSolid, heroPhoneSolid })],
   templateUrl: './home.component.html',
