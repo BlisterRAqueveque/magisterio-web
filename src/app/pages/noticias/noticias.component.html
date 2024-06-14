@@ -1,0 +1,26 @@
+@if (noticia) {
+<div class="w-full lg:h-56 h-72 bg-sky-950 flex flex-col justify-center pl-6 pt-10">
+    <h1 class="text-3xl text-center font-bold text-white">{{noticia.title}}</h1>
+</div>
+
+<div class="px-7 pt-7 pb-2 flex justify-center max-h-[60vh]">
+    <img class="object-contain" [src]="noticia.background" [alt]="noticia.title">
+</div>
+<div class="lg:px-48 px-10 md:px-28 text-center text-sm">
+    <cite>"{{noticia.subtitle}}"</cite>
+</div>
+<div class="my-10 px-10 text-justify">
+    <p>{{noticia.news}}</p>
+</div>
+}
+
+<div class="w-full text-end p-10">
+    <button class="transition-all duration-300 px-3 py-2 rounded-md border-2 
+    border-sky-950 mt-3 text-base hover:bg-sky-950 group text-sky-950" routerLink="/home">
+        <div class="flex justify-center items-center relative">
+            <p class="group-hover:opacity-0 group-hover:text-white transition-all duration-300">Volver</p>
+            <i class="absolute transition-all duration-300 pi pi-arrow-right
+                group-hover:opacity-100 group-hover:rotate-180 opacity-0 text-white"></i>
+        </div>
+    </button>
+</div>

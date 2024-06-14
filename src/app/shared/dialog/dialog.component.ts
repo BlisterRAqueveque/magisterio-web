@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, Input } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroXMarkSolid } from '@ng-icons/heroicons/solid';
-import { Resoluciones } from '../../interfaces/resoluciones.interface';
+import { ResolucionesI } from '../../interfaces/resoluciones.interface';
 
 @Component({
   selector: 'd-dialog',
@@ -13,11 +13,11 @@ import { Resoluciones } from '../../interfaces/resoluciones.interface';
   styleUrl: './dialog.component.scss',
 })
 export class DialogComponent {
-  resol!: Resoluciones;
+  resol!: ResolucionesI;
 
   visible = false;
 
-  present(resol: Resoluciones) {
+  present(resol: ResolucionesI) {
     this.resol = resol;
     const body = document.getElementById('body-principal');
     body?.classList.add('overflow-hidden');

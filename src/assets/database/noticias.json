@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "id": 1,
+      "background": "/assets/slider/01.jpg",
+      "title": "La Mutual de Magisterio entrega Escrituras y Viviendas",
+      "subtitle": "El 4 de abril la MMR que conduce Pedro Bichara entregó más de 100 escrituras a asociados/as de la Ciudad de Allen. Hace mucho tiempo un grupo de asociados/as se acercó a plantearnos la necesidad del acceso a la tierra para la vivienda propia",
+      "news": "El 4 de abril la MMR que conduce Pedro Bichara entregó más de 100 escrituras a asociados/as de la Ciudad de Allen. Hace mucho tiempo un grupo de asociados/as se acercó a plantearnos la necesidad del acceso a la tierra para la vivienda propia. Desde ese día la Comisión de viviendas elegida en asamblea no se detuvo ni un instante en lograr ese objetivo con el acompañamiento del CDC de su Mutual. Y así muchas gestiones, viajes, debate, momentos de dudas y de grandes definiciones llegamos a este día. Como Presidente de la MMR llevaré adelante unos de los momentos más importantes para nuestra entidad: entregar a 110 familias la ESCRITURA de su terreno con los servicios básicos. Agua, Gas y luz. Expresó, Pedro Bichara. En el día de mañana a las 12 hs la MMR entregará junto al IPPV 19 viviendas a asociados/as de la localidad de Cervantes. También este caso los docentes adquirieron la tierra a través de su Mutual donde el Estado construyó las viviendas en un convenio entre las partes. Es el resultado de mucho trabajo y experiencia colectiva manifestó, el vicepresidente José Vidal quien participará del acto de mañana junto a directivos del Magisterio. 24 de abril de 2019. Prensa Magisterio",
+      "active": true
+    },
+    {
+      "id": 2,
+      "background": "/assets/slider/02.jpg",
+      "title": "TEXTO DESCRIPTIVO 2",
+      "subtitle": "Subtitulo descriptivo 2",
+      "news": "",
+      "active": true
+    }
+  ],
+  "msg": "Approved"
+}

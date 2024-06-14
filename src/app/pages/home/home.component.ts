@@ -6,11 +6,11 @@ import {
 } from '@ng-icons/heroicons/solid';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { CarouselComponent } from '../../shared/carousel/carousel.component';
-import { SomosComponent } from '../somos/somos.component';
+import { SomosComponent } from './somos/somos.component';
 import { ActivatedRoute } from '@angular/router';
-import { PrincipiosComponent } from '../principios/principios.component';
-import { DelegacionesComponent } from '../delegaciones/delegaciones.component';
-import { ResolucionesComponent } from '../resoluciones/resoluciones.component';
+import { PrincipiosComponent } from './principios/principios.component';
+import { DelegacionesComponent } from './delegaciones/delegaciones.component';
+import { ResolucionesComponent } from './resoluciones/resoluciones.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
 
 @Component({

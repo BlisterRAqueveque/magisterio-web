@@ -12,7 +12,7 @@
         @for(r of resoluciones; track r) {
         <div class="lg:col-span-4 sm:col-span-6 md:col-span-4 col-span-12
             flex justify-center p-4" (click)="dialog.present(r)">
-            <div class="w-full h-40 bg-white rounded-md shadow-xl flex
+            <div class="w-full min-h-40 bg-white rounded-md shadow-xl flex
                     justify-center flex-col items-center cursor-pointer px-4">
                 <h1 class="text-2xl"><b>Resolución n° {{r.resol}}</b></h1>
                 <p><b>Visto: </b>{{r.visto}}</p>

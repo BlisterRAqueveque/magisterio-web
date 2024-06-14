@@ -1,14 +1,14 @@
-export interface Resoluciones {
+export interface ResolucionesI {
   id: number;
   resol: string;
   visto: string;
   considerando: string[];
-  articulo: Articulos[];
+  articulo: ArticulosI[];
   lugar: string;
   fecha: string;
 }
 
-export interface Articulos {
+export interface ArticulosI {
   art: number;
   desc: string;
 }
