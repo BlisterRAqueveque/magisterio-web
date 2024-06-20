@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, HostListener } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Component, HostListener, inject } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import {
   heroChevronDownSolid,
   heroPhoneSolid,
 } from '@ng-icons/heroicons/solid';
+import { RouterService } from '../../services/router.service';
 
 @Component({
   selector: 'navbar',
@@ -48,5 +49,15 @@ export class NavbarComponent {
   toggleDiv(divOne: HTMLDivElement, divTwo?: HTMLDivElement) {
     divOne.classList.toggle('show');
     if (divTwo) divTwo.classList.remove('show');
+  }
+
+  router = inject(Router);
+  navigate(link: string, fragment: string) {
+    this.router.navigate([link], { fragment, replaceUrl: true });
+  }
+
+  routerService = inject(RouterService);
+  selectTurismo(i: number) {
+    this.routerService.setIndex(i);
   }
 }

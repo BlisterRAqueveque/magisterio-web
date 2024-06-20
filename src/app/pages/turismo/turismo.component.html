@@ -1,0 +1,29 @@
+<div class="px-52 mt-8">
+    <div class="flex justify-center bg-gray-100 rounded-xl py-2">
+        <div id="1" class="selectable p-3 rounded-md text-gray-500 mx-6 z-10 cursor-pointer transition-all
+            ease-in-out duration-300" #index1 routerLink="/turismo" fragment="1" (click)="active('1')">
+            Turismo</div>
+        <div id="2" class="selectable p-3 rounded-md text-gray-500 mx-6 z-10 cursor-pointer transition-all
+            ease-in-out duration-300" #index2 routerLink="/turismo" fragment="2" (click)="active('2')">
+            Paquetes turísticos</div>
+        <div id="3" class="selectable p-3 rounded-md text-gray-500 mx-6 z-10 cursor-pointer transition-all
+            ease-in-out duration-300" #index3 routerLink="/turismo" fragment="3" (click)="active('3')">
+            Complejos y casa mutual</div>
+        <div class="absolute bg-white py-2 w-10 left-0 top-0 p-3 rounded-md shadow-xl" id="select"></div>
+    </div>
+</div>
+
+<div class="w-full h-full p-10">
+    <div id="card" class="bg-gray-100 w-full h-full rounded-md transition-all duration-300 card">
+        <div *ngIf="sectionActive === 1">
+            Turismo
+        </div>
+        <div *ngIf="sectionActive === 2">
+            Paquetes turísticos
+        </div>
+        <div *ngIf="sectionActive === 3">
+            Complejos y casa mutual
+        </div>
+
+    </div>
+</div>

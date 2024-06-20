@@ -35,7 +35,9 @@ export class HomeComponent {
 
   ngOnInit(): void {
     this.route.fragment.subscribe((data) => {
-      if (data) this.jumpSection(data);
+      setTimeout(() => {
+        if (data) this.jumpSection(data);
+      }, 50);
     });
   }
 

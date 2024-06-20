@@ -1,9 +1,26 @@
 import { ApplicationConfig } from '@angular/core';
-import { provideRouter } from '@angular/router';
 import { provideAnimations } from '@angular/platform-browser/animations';
+import {
+  InMemoryScrollingOptions,
+  provideRouter,
+  withInMemoryScrolling,
+} from '@angular/router';
 
-import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
+import { routes } from './app.routes';
+
+// const scrollConfig: InMemoryScrollingOptions = {
+//   scrollPositionRestoration: 'enabled',
+//   anchorScrolling: 'enabled',
+// };
+
+// export const appConfig: ApplicationConfig = {
+//   providers: [
+//     provideRouter(routes, withInMemoryScrolling(scrollConfig)),
+//     provideAnimations(),
+//     provideHttpClient(/*withInterceptors([jwtInterceptor])*/),
+//   ],
+// };
 
 export const appConfig: ApplicationConfig = {
   providers: [

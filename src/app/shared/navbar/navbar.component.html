@@ -23,13 +23,13 @@
                 shadow-md rounded-sm pt-3 hide w-44">
                 <div class="w-auto flex flex-col">
                     <a class="py-2 px-6 hover:bg-gray-200 transition-all
-                        duration-200 cursor-pointer" routerLink="/home" fragment="somos">¿Quienes somos?</a>
+                        duration-200 cursor-pointer" (click)="navigate('/home', 'somos')">¿Quienes somos?</a>
                     <a class="py-2 px-6 hover:bg-gray-200 transition-all
-                        duration-200 cursor-pointer" routerLink="/home" fragment="principios">Principios</a>
+                        duration-200 cursor-pointer" (click)="navigate('/home', 'principios')">Principios</a>
                     <p class="py-2 px-6 hover:bg-gray-200 transition-all
-                        duration-200 cursor-pointer" routerLink="/home" fragment="delegaciones">Delegaciones</p>
+                        duration-200 cursor-pointer" (click)="navigate('/home', 'delegaciones')">Delegaciones</p>
                     <p class="py-2 px-6 hover:bg-gray-200 transition-all
-                        duration-200 cursor-pointer" routerLink="/home" fragment="resoluciones">Resoluciones</p>
+                        duration-200 cursor-pointer" (click)="navigate('/home', 'resoluciones')">Resoluciones</p>
                 </div>
             </div>
         </div>
@@ -43,12 +43,12 @@
             <div #divTur class="absolute top-14 bg-white
                 shadow-md rounded-sm pt-3 hide w-52">
                 <div class="w-auto flex flex-col">
-                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
-                        duration-200 cursor-pointer">Turismo</p>
-                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
-                        duration-200 cursor-pointer">Paquetes turísticos</p>
-                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
-                        duration-200 cursor-pointer">Complejos y casa mutual</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200 cursor-pointer"
+                        routerLink="/turismo" (click)="selectTurismo(1)">Turismo</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200 cursor-pointer"
+                        routerLink="/turismo" (click)="selectTurismo(2)">Paquetes turísticos</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200 cursor-pointer"
+                        routerLink="/turismo" (click)="selectTurismo(3)">Complejos y casa mutual</p>
                 </div>
             </div>
         </div>
@@ -90,18 +90,18 @@
                     <div class="hide" #resDivInst>
                         <div class="w-auto flex flex-col">
                             <a class="py-2 px-6 hover:bg-gray-200 transition-all
-                            duration-200 cursor-pointer" routerLink="/home"
-                                (click)="isActive = false; toggleDiv(resDivInst)" fragment="somos">¿Quienes somos?</a>
+                            duration-200 cursor-pointer" (click)="navigate('/home', 'somos')"
+                                (click)="isActive = false; toggleDiv(resDivInst)">¿Quienes somos?</a>
                             <a class="py-2 px-6 hover:bg-gray-200 transition-all
-                            duration-200 cursor-pointer" routerLink="/home"
-                                (click)="isActive = false; toggleDiv(resDivInst)" fragment="principios">Principios</a>
+                            duration-200 cursor-pointer" (click)="navigate('/home', 'principios')"
+                                (click)="isActive = false; toggleDiv(resDivInst)">Principios</a>
                             <p class="py-2 px-6 hover:bg-gray-200 transition-all
-                            duration-200 cursor-pointer" routerLink="/home"
-                                (click)="isActive = false; toggleDiv(resDivInst)" fragment="delegaciones">Delegaciones
+                            duration-200 cursor-pointer" (click)="navigate('/home', 'delegaciones')"
+                                (click)="isActive = false; toggleDiv(resDivInst)">Delegaciones
                             </p>
                             <p class="py-2 px-6 hover:bg-gray-200 transition-all
-                            duration-200 cursor-pointer" routerLink="/home"
-                                (click)="isActive = false; toggleDiv(resDivInst)" fragment="resoluciones">Resoluciones
+                            duration-200 cursor-pointer" (click)="navigate('/home', 'resoluciones')"
+                                (click)="isActive = false; toggleDiv(resDivInst)">Resoluciones
                             </p>
                         </div>
                     </div>
@@ -120,13 +120,16 @@
                     <div #resDivTur class="hide">
                         <div class="w-auto flex flex-col">
                             <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200
-                                cursor-pointer" (click)="isActive = false; toggleDiv(resDivInst)">Turismo
+                                cursor-pointer" routerLink="/turismo"
+                                (click)="isActive = false; toggleDiv(resDivInst)">Turismo
                             </p>
                             <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200
-                                cursor-pointer" (click)="isActive = false; toggleDiv(resDivInst)">Paquetes
+                                cursor-pointer" routerLink="/turismo"
+                                (click)="isActive = false; toggleDiv(resDivInst)">Paquetes
                                 turísticos</p>
                             <p class="py-2 px-6 hover:bg-gray-200 transition-all duration-200
-                                cursor-pointer" (click)="isActive = false; toggleDiv(resDivInst)">
+                                cursor-pointer" routerLink="/turismo"
+                                (click)="isActive = false; toggleDiv(resDivInst)">
                                 Complejos y casa mutual</p>
                         </div>
                     </div>
