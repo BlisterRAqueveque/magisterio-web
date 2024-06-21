@@ -3,5 +3,9 @@
 }
 
 .rotate {
-    transform: rotateY(360deg);
+  transform: rotateY(360deg);
+}
+
+.active + div {
+  width: 100% !important;
 }

@@ -2,18 +2,20 @@
     <!-- <swiper-container slides-per-view="1" loop="true" navigation="true" speed="500" pagination="true"  scrollbar="true"> -->
     <swiper-container slides-per-view="1" loop="true" navigation="true" speed="500" pagination="true" autoplay="true"
         delay="500">
-        <swiper-slide *ngFor="let img of images">
+        @for (img of images; track $index) {
+        <swiper-slide>
             <div class="w-full h-screen flex justify-center items-center relative">
                 <img src="{{img.background}}" class="absolute h-full w-full -z-10 object-cover">
                 <div class="w-full h-1/2 bg-white/60 flex flex-col justify-center items-center">
                     <h1 class="lg:text-4xl sm:text-xl text-sky-950 font-bold">{{img.title}}</h1>
                     <h4 class="lg:text-2xl sm:text-base p-14 ">{{img.subtitle}}</h4>
                     <button class="transition-all duration-300 px-7 py-2 rounded-md border-2
-                        border-sky-950 mt-3 text-xl hover:bg-sky-950 hover:text-white" (click)="goNoticia(img.id)">
+                            border-sky-950 mt-3 text-xl hover:bg-sky-950 hover:text-white" (click)="goNoticia(img.id)">
                         Mas información
                     </button>
                 </div>
             </div>
         </swiper-slide>
+        }
     </swiper-container>
 </div>

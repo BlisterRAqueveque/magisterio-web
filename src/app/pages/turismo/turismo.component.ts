@@ -1,29 +1,47 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject } from '@angular/core';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  Component,
+  HostListener,
+  inject,
+} from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
+import { TurismosI } from '../../interfaces/turismos.interface';
 import { RouterService } from '../../services/router.service';
+import { TurismosService } from '../../services/turismos.service';
+import { NgIconComponent, provideIcons } from '@ng-icons/core';
+import { heroWifiSolid } from '@ng-icons/heroicons/solid';
 
 @Component({
   selector: 'app-turismo',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, NgIconComponent],
+  providers: [provideIcons({ heroWifiSolid })],
   templateUrl: './turismo.component.html',
   styleUrl: './turismo.component.scss',
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class TurismoComponent {
   route = inject(ActivatedRoute);
   routerService = inject(RouterService);
+  turismoService = inject(TurismosService);
+
+  provincias: TurismosI[] = [];
+  selectedProvincia!: TurismosI;
+
+  ngOnInit() {
+    this.turismoService.getTurismos().subscribe((data) => {
+      this.provincias = data;
+      this.selectedProvincia = this.provincias[0];
+    });
+  }
+
   async ngAfterViewInit() {
     this.routerService.$index.subscribe((i) => {
       setTimeout(() => {
         this.active(i.toString());
       }, 50);
     });
-    // this.route.fragment.subscribe((index) => {
-    //   setTimeout(() => {
-    //     this.active(index ?? '1');
-    //   }, 50);
-    // });
   }
 
   active(index: string) {
@@ -74,5 +92,25 @@ export class TurismoComponent {
   sectionActive = 1;
   setActive(id: number) {
     this.sectionActive = id;
+  }
+
+  @HostListener('click', ['$event'])
+  onClick(event: MouseEvent) {
+    const el = event.target as HTMLElement;
+    if (el.id === 'provincia') {
+      const elements = document.querySelectorAll('.active');
+      elements.forEach((e) => {
+        e.classList.remove('active');
+      });
+      el.classList.add('active');
+    }
+  }
+
+  isVisible = true;
+  restart() {
+    this.isVisible = false;
+    setTimeout(() => {
+      this.isVisible = true;
+    }, 5);
   }
 }
