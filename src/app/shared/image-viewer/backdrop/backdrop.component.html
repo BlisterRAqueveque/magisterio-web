@@ -1,0 +1,11 @@
+<div @fadeInOut class="flex justify-center items-center fixed top-0 left-0 w-screen h-screen
+    z-50 transition-all duration-300" id="backdrop">
+
+    <ng-icon name="heroXMarkSolid" size="2rem" color="white" class="absolute cursor-pointer top-5 right-10 z-50"
+        (click)="close()" />
+    <div class=" flex-1 w-screen h-screen bg-black/60 backdrop-blur-sm fixed" (click)="close()">
+    </div>
+
+    <img [src]="src" alt="" style="height: 70vh;" class="object-contain z-10">
+
+</div>

@@ -8,6 +8,7 @@ import {
 
 import { provideHttpClient } from '@angular/common/http';
 import { routes } from './app.routes';
+import { DomService } from './shared/image-viewer/backdrop/backdrop.service';
 
 // const scrollConfig: InMemoryScrollingOptions = {
 //   scrollPositionRestoration: 'enabled',
@@ -27,5 +28,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideAnimations(),
     provideHttpClient(/*withInterceptors([jwtInterceptor])*/),
+    DomService,
   ],
 };

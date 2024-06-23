@@ -1,7 +1,15 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import {
+  Component,
+  Input,
+  ViewChild,
+  ViewContainerRef,
+  inject
+} from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroEyeSolid } from '@ng-icons/heroicons/solid';
+import { DomService } from './backdrop/backdrop.service';
+import { BackdropComponent } from './backdrop/backdrop.component';
 
 @Component({
   selector: 'm-image-viewer',
@@ -15,4 +23,13 @@ export class ImageViewerComponent {
   @Input() src!: string;
   @Input() alt!: string;
   @Input() class!: string;
+
+  @ViewChild('contenedor', { read: ViewContainerRef })
+  contenedor!: ViewContainerRef;
+
+  service = inject(DomService);
+
+  insert() {
+    this.service.appendComponentToBody(BackdropComponent, this.src);
+  }
 }

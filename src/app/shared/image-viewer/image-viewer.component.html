@@ -1,9 +1,7 @@
-<div class="relative group cursor-pointer">
+<div class="relative group cursor-pointer" (click)="insert()">
     <img [src]="src" [alt]="alt" [class]="class">
     <div class="absolute top-0 w-full h-full flex justify-center items-center bg-black/40
         {{class}} transition-all duration-300 opacity-0 group-hover:opacity-100">
         <ng-icon name="heroEyeSolid" size="1.6rem" color="white" />
     </div>
 </div>
-
-<div class="backdrop"></div>
