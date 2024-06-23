@@ -11,11 +11,21 @@ import { RouterService } from '../../services/router.service';
 import { TurismosService } from '../../services/turismos.service';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroWifiSolid } from '@ng-icons/heroicons/solid';
+import { TurismoSectionComponent } from './turismo-section/turismo-section.component';
+import { PaquetesSectionComponent } from './paquetes-section/paquetes-section.component';
+import { AlojamientosSectionComponent } from './alojamientos-section/alojamientos-section.component';
 
 @Component({
   selector: 'app-turismo',
   standalone: true,
-  imports: [CommonModule, RouterModule, NgIconComponent],
+  imports: [
+    CommonModule,
+    RouterModule,
+    NgIconComponent,
+    TurismoSectionComponent,
+    PaquetesSectionComponent,
+    AlojamientosSectionComponent,
+  ],
   providers: [provideIcons({ heroWifiSolid })],
   templateUrl: './turismo.component.html',
   styleUrl: './turismo.component.scss',
@@ -25,16 +35,6 @@ export class TurismoComponent {
   route = inject(ActivatedRoute);
   routerService = inject(RouterService);
   turismoService = inject(TurismosService);
-
-  provincias: TurismosI[] = [];
-  selectedProvincia!: TurismosI;
-
-  ngOnInit() {
-    this.turismoService.getTurismos().subscribe((data) => {
-      this.provincias = data;
-      this.selectedProvincia = this.provincias[0];
-    });
-  }
 
   async ngAfterViewInit() {
     this.routerService.$index.subscribe((i) => {
@@ -92,25 +92,5 @@ export class TurismoComponent {
   sectionActive = 1;
   setActive(id: number) {
     this.sectionActive = id;
-  }
-
-  @HostListener('click', ['$event'])
-  onClick(event: MouseEvent) {
-    const el = event.target as HTMLElement;
-    if (el.id === 'provincia') {
-      const elements = document.querySelectorAll('.active');
-      elements.forEach((e) => {
-        e.classList.remove('active');
-      });
-      el.classList.add('active');
-    }
-  }
-
-  isVisible = true;
-  restart() {
-    this.isVisible = false;
-    setTimeout(() => {
-      this.isVisible = true;
-    }, 5);
   }
 }

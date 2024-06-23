@@ -1,0 +1,106 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "lugar": "Cataratas del Iguazu",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "cataratas_2013.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "Termas de Río Hondo",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "termas2013promo.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "Buenos Aires",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "buenosaires.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "Glaciar Perito Moreno",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "Glaciar-2013.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "Mendoza",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "mendoza.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "Merlo",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "Merlo.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "Puerto Montt",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "pmontt.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "Puerto Varas",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "Puerto-varas-2013.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "Todo Cuyo",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "Todo-Cuyo.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "lugar": "",
+      "paquete": "",
+      "adjuntos": [
+        {
+          "img": "",
+          "descripcion": ""
+        }
+      ]
+    }
+  ],
+  "msg": "Approved"
+}

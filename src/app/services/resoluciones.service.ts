@@ -10,7 +10,7 @@ import { ResolucionesI } from '../interfaces/resoluciones.interface';
 @Injectable({ providedIn: 'root' })
 export class ResolucionesService {
   private readonly http = inject(HttpClient);
-  private readonly url = environment.url;
+  private readonly url = environment.apiURL;
 
   getResoluciones() {
     const direction = `${this.url}/resoluciones.json`;

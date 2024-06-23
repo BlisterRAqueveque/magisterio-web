@@ -1,21 +1,21 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { catchError, map } from 'rxjs';
 import { environment } from '../../environments/environment.development';
 import { ResponseI } from '../interfaces/response.interface';
-import { TurismosI } from '../interfaces/turismos.interface';
+import { catchError, map } from 'rxjs';
 import { handleError } from '../tools/handle-error';
+import { AlojamientosI } from '../interfaces/alojamientos.interface';
 
 @Injectable({ providedIn: 'root' })
-export class TurismosService {
+export class AlojamientosService {
   private readonly http = inject(HttpClient);
   private readonly url = environment.apiURL;
 
-  getTurismos() {
-    const direction = `${this.url}/turismos.json`;
+  getAlojamientos() {
+    const direction = `${this.url}/alojamientos.json`;
     return this.http.get<ResponseI>(direction).pipe(
       catchError((e) => handleError(e)),
-      map((data) => data.result as TurismosI[])
+      map((data) => data.result as AlojamientosI[])
     );
   }
 }

@@ -10,7 +10,7 @@ import { NoticiasI } from '../interfaces/noticias.interface';
 export class NoticiasService {
   private readonly http = inject(HttpClient);
 
-  private readonly url = environment.url;
+  private readonly url = environment.apiURL;
 
   getOneNoticia(id: number) {
     const direction = `${this.url}/noticias.json`;

@@ -1,0 +1,34 @@
+<div class="flex lg:flex-row flex-col">
+    <!-- Side menu -->
+    <div class="lg:w-1/5 w-full bg-gray-100 rounded-l-md">
+        <h3 class="lg:text-2xl md:text-base sm:text-sm text-center p-3">Paquetes turísticos</h3>
+        <div class="px-2 mb-4">
+            <hr class="border-gray-300">
+        </div>
+
+        @for (pq of paquetes; track $index) {
+        <div class="relative group">
+            <h6 class="lg:text-xl md:text-base sm:text-sm py-4 cursor-pointer mb-4 pl-5 relative z-10" id="provincia"
+                [ngClass]="{'active': $index === 0}" (click)="selectedPaquete = pq;">
+                {{pq.lugar}}</h6>
+            <div class="group-hover:w-full absolute top-0 px-4 w-0 z-0 transition-all duration-100" id="section">
+                <h6 class=" text-xl py-4 text-transparent bg-white rounded-md shadow-xl">a</h6>
+            </div>
+        </div>
+        }
+
+    </div>
+
+    <!-- Full menu -->
+    <div class="lg:w-4/5 w-full bg-white rounded-r-md p-8">
+
+        @if (selectedPaquete) {
+        @for (lu of selectedPaquete.adjuntos; track $index) {
+        <div class="flex w-full justify-center items-center">
+            <img [src]="'assets/turismo/' + lu.img" alt="">
+        </div>
+        }
+        }
+
+    </div>
+</div>

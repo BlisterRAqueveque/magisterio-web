@@ -1,0 +1,96 @@
+{
+  "ok": true,
+  "result": [
+    {
+      "localidad": "General Roca",
+      "direccion": "Rodhe 466",
+      "horarios": [
+        "Lunes a viernes de 8:00 a 20:00 hs",
+        "Sábado de 8:00 a 14:00 hs"
+      ],
+      "telefonos": [
+        "Tel. encargada para urgencias: 2920 247005",
+        "Tel. reservas: 298 4421820"
+      ],
+      "adjuntos": [
+        {
+          "img": "800px-GeneralRocaRN089.jpeg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "localidad": "Cipolletti",
+      "direccion": "Miguel Muñoz 650",
+      "horarios": [
+        "Lunes a viernes de 8:00 a 20:00 hs",
+        "Sábado de 8:00 a 14:00 hs"
+      ],
+      "telefonos": [
+        "Tel. encargada para urgencias: 2920 247011",
+        "Tel. reservas: 299 4776824"
+      ],
+      "adjuntos": [
+        {
+          "img": "cipo.png",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "localidad": "San Carlos de Bariloche",
+      "direccion": "Elflein 533",
+      "horarios": [
+        "Lunes a viernes de 8:00 a 20:00 hs",
+        "Sábado de 8:00 a 14:00 hs"
+      ],
+      "telefonos": [
+        "Tel. encargada para urgencias: 2920 540510",
+        "Tel. reservas: 2944 430763"
+      ],
+      "adjuntos": [
+        {
+          "img": "CasaBariloche.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "localidad": "Viedma",
+      "direccion": "",
+      "horarios": [
+        "Lunes a viernes de 8:00 a 20:00 hs",
+        "Sábado de 8:00 a 14:00 hs"
+      ],
+      "telefonos": [
+        "Tel. encargada para urgencias: 2920 522561",
+        "Tel. reservas: 2920 424639"
+      ],
+      "adjuntos": [
+        {
+          "img": "CasaCentral.jpg",
+          "descripcion": ""
+        }
+      ]
+    },
+    {
+      "localidad": "Complejo Las Grutas",
+      "direccion": "Av. Río Negro",
+      "horarios": [
+        "Lunes de 8:00 a 12:00 hs",
+        "Martes de 8:00 a 12:00 hs",
+        "Miércoles sin atención",
+        "Jueves de 8:00 a 12:00 hs y de 16:00 a 20:00hs",
+        "Viernes de 8:00 a 12:00 hs y de 16:00 a 20:00hs"
+      ],
+      "telefonos": ["Tel.: 2934 497615", "Tel. urgencias: 2920 546780"],
+      "adjuntos": [
+        {
+          "img": "fotocomplejo3.jpg",
+          "descripcion": ""
+        }
+      ]
+    }
+  ],
+  "msg": "Approved"
+}

@@ -1,3 +1,5 @@
+import { AdjuntosI } from "./adjuntos.interface";
+
 export interface TurismosI {
   provincia: string;
   lugares: LugaresI[];
@@ -19,7 +21,4 @@ export interface ServiciosI {
   servicio: string;
 }
 
-export interface AdjuntosI {
-  img: string;
-  descripcion: string;
-}
+

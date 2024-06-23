@@ -1,4 +1,4 @@
-<div class="px-52 mt-8">
+<div class="lg:px-52 md:px-12 sm:px-4 mt-8">
     <div class="flex justify-center bg-gray-100 rounded-xl py-2">
         <div id="1" class="selectable p-3 rounded-md text-gray-500 mx-6 z-10 cursor-pointer transition-all
             ease-in-out duration-300" #index1 routerLink="/turismo" fragment="1" (click)="active('1')">
@@ -16,90 +16,13 @@
 <div class="w-full p-10">
     <div id="card" class="bg-gray-100 w-full rounded-md transition-all duration-300 card shadow-xl">
         <div *ngIf="sectionActive === 1">
-            <div class="flex flex-row">
-                <!-- Side menu -->
-                <div class="w-1/5 bg-gray-100 rounded-l-md">
-                    <h3 class="text-2xl text-center p-3">Provincias</h3>
-                    <div class="px-2 mb-4">
-                        <hr class="border-gray-300">
-                    </div>
-
-                    @for (pr of provincias; track $index) {
-                    <div class="relative group">
-                        <h6 class="text-xl py-4 cursor-pointer mb-4 pl-5 relative z-10" id="provincia"
-                            [ngClass]="{'active': $index === 0}" (click)="selectedProvincia = pr; restart()">
-                            {{pr.provincia}}</h6>
-                        <div class="group-hover:w-full absolute top-0 px-4 w-0 z-0 transition-all duration-100"
-                            id="section">
-                            <h6 class=" text-xl py-4 text-transparent bg-white rounded-md shadow-xl">a</h6>
-                        </div>
-                    </div>
-                    }
-
-                </div>
-
-                <!-- Full menu -->
-                <div class="w-4/5 bg-white rounded-r-md p-8">
-
-                    @for (lu of selectedProvincia.lugares; track $index) {
-                    <div class="w-full rounded-md shadow-xl flex flex-col mb-6">
-                        <div class="flex w-full">
-                            @if(isVisible) {
-                            <div class="w-2/6 py-6">
-                                <swiper-container slides-per-view="1" loop="true" speed="500" pagination="true"
-                                    autoplay="true" delay="500">
-                                    @for (ad of lu.adjuntos; track $index) {
-                                    <swiper-slide>
-                                        <div class="w-full h-full flex justify-center items-center">
-                                            <img class="w-full max-h-64 object-contain rounded-l-md"
-                                                src="/assets/turismo/{{ad.img}}" alt="">
-                                        </div>
-                                    </swiper-slide>
-                                    }
-                                </swiper-container>
-                            </div>
-                            }
-                            <div class="flex-1 py-4">
-                                <h1 class="text-2xl font-bold pl-4">{{lu.lugar}}</h1>
-                                <p class="pl-4 pt-4">{{lu.descripcion}}</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="px-6">
-                                <hr>
-                            </div>
-                            <div class="py-6">
-                                <h1 class="text-xl text-center">Servicios</h1>
-                                @if(lu.servicios ? lu.servicios.length > 0 : false){
-                                <div class="grid grid-cols-12 gap-4 pt-6 px-4">
-                                    @for (se of lu.servicios; track $index) {
-                                    <div class="lg:col-span-4 sm:col-span-6 md:col-span-4 col-span-12 flex p-4">
-                                        <div class="flex flex-row justify-center items-center">
-                                            <ng-icon class="mr-1" name="heroWifiSolid">
-                                            </ng-icon>
-                                            <p class="text-sm flex-1">{{se.servicio}}</p>
-                                        </div>
-
-                                    </div>
-                                    }
-                                </div>
-                                }
-                                @else {
-                                <p class="text-center">No hay servicios registrados</p>
-                                }
-                            </div>
-                        </div>
-                    </div>
-                    }
-
-                </div>
-            </div>
+            <t-turismo-section />
         </div>
         <div *ngIf="sectionActive === 2">
-            Paquetes turísticos
+            <t-paquetes-section />
         </div>
         <div *ngIf="sectionActive === 3">
-            Complejos y casa mutual
+            <t-alojamientos-section />
         </div>
 
     </div>
