@@ -3,7 +3,7 @@ import { BehaviorSubject } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class RouterService {
-  private readonly index = new BehaviorSubject<number>(3);
+  private readonly index = new BehaviorSubject<number>(1);
   $index = this.index.asObservable();
 
   setIndex(i: number) {

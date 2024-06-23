@@ -33,8 +33,11 @@
                         @for (ad of lu.adjuntos; track $index) {
                         <swiper-slide>
                             <div class="w-full h-full flex justify-center items-center">
-                                <img class="w-full max-h-64 object-contain rounded-l-md"
-                                    src="/assets/turismo/{{ad.img}}" alt="">
+                                <m-image-viewer [src]="'/assets/turismo/' + ad.img"
+                                    [class]="'w-full max-h-64 object-contain rounded-l-md'" />
+                                <!-- Before use component img-viewer 
+                                 <img class="w-full max-h-64 object-contain rounded-l-md"
+                                    src="/assets/turismo/{{ad.img}}" alt=""> -->
                             </div>
                         </swiper-slide>
                         }

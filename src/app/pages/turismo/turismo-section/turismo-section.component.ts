@@ -10,11 +10,12 @@ import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroWifiSolid } from '@ng-icons/heroicons/solid';
 import { TurismosI } from '../../../interfaces/turismos.interface';
 import { TurismosService } from '../../../services/turismos.service';
+import { ImageViewerComponent } from '../../../shared/image-viewer/image-viewer.component';
 
 @Component({
   selector: 't-turismo-section',
   standalone: true,
-  imports: [NgIconComponent, CommonModule],
+  imports: [NgIconComponent, CommonModule, ImageViewerComponent],
   providers: [provideIcons({ heroWifiSolid })],
   templateUrl: './turismo-section.component.html',
   styleUrl: './turismo-section.component.scss',
