@@ -1,1 +1,36 @@
-<p>alojamientos-section works!</p>
+<div class="bg-white rounded-md">
+    <h1 class="lg:text-3xl text-base text-center my-4">Tarifas de alojamiento</h1>
+    <div class="px-4 lg:block hidden">
+        <hr>
+    </div>
+    <div class="grid grid-cols-12 gap-4 pt-6 px-4 my-4">
+        @for(al of alojamientos; track $index) {
+        <div class="lg:col-span-4 sm:col-span-6 md:col-span-6 col-span-12 p-4 lg:border-r lg:border-t-0
+            border-t">
+            <p class="text-center"><b>Alojamiento</b> {{ al.localidad }}</p>
+            <div class="flex justify-center items-center w-full py-6">
+                <m-image-viewer [src]="'assets/turismo/' + al.adjuntos[0].img" [class]="'h-48 rounded-md shadow-md'" />
+            </div>
+            <p class="text-center"><b>Dirección:</b> {{ al.direccion }}</p>
+            <div class="px-14 my-4">
+                <hr>
+            </div>
+            <p class="text-center"><b>Horarios de atención:</b></p>
+            <div class="px-14 pt-4">
+                @for (ho of al.horarios; track $index) {
+                <p>{{ ho }}</p>
+                }
+            </div>
+            <div class="px-14 my-4">
+                <hr>
+            </div>
+            <p class="text-center"><b>Teléfonos:</b></p>
+            <div class="px-14 pt-4">
+                @for (te of al.telefonos; track $index) {
+                <p>{{ te }}</p>
+                }
+            </div>
+        </div>
+        }
+    </div>
+</div>
