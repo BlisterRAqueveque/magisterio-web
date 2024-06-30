@@ -60,4 +60,8 @@ export class NavbarComponent {
   selectTurismo(i: number) {
     this.routerService.setIndex(i);
   }
+
+  showFormulario(form: string) {
+    window.open(`/assets/formularios/${form}.pdf`)
+  }
 }

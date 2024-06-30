@@ -12,6 +12,7 @@
         rounded-2xl shadow-md relative hidden">
         <img src="/assets/img/logo.svg" class="cursor-pointer absolute left-2 w-10 h-10 opacity-0
             transition-all duration-300" id="logo" (click)="scrollToTop()">
+        <!-- Institucional -->
         <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer" (mouseover)="show(divInst)"
             (mouseleave)="hide(divInst)">
             <!-- Texto -->
@@ -33,6 +34,7 @@
                 </div>
             </div>
         </div>
+        <!-- Turismo -->
         <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer" (mouseover)="show(divTur)"
             (mouseleave)="hide(divTur)">
             <!-- Texto -->
@@ -52,14 +54,56 @@
                 </div>
             </div>
         </div>
+        <!-- Quiero ser socio / a -->
         <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
             <!-- Texto -->
             <p routerLink="/socios">Quiero ser socio / a </p>
         </div>
+        <!-- Contacto -->
         <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
             <!-- Texto -->
             <p routerLink="/contacto">Contacto </p>
             <ng-icon class="ml-2" name="heroPhoneSolid" />
+        </div>
+        <!-- Formulario -->
+        <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer" (mouseover)="show(divForm)"
+            (mouseleave)="hide(divForm)">
+            <!-- Texto -->
+            <p>Formularios </p>
+            <ng-icon class="ml-2" name="heroChevronDownSolid" />
+
+            <!-- Menú -->
+            <div #divForm class="absolute top-14 bg-white
+                shadow-md rounded-sm pt-3 hide w-60">
+                <div class="w-auto flex flex-col">
+                    <a class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('afiliacion')">Formulario de
+                        asociación</a>
+                    <a class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('gestion')">Formulario
+                        gestión</a>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('nacimiento')">Formulario por nacimiento
+                    </p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('sem')">Formulario SEM</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('matrimonio')">Formulario por
+                        casamiento</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('jubilacion')">Formulario por
+                        jubilación</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('actualizacion')">Formulario
+                        actualización de datos</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('fallecimiento')">Formulario por
+                        fallecimiento</p>
+                    <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                        duration-200 cursor-pointer" (click)="showFormulario('garantias')">Formulario carnet de
+                        garantías</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -142,6 +186,62 @@
                     <!-- Texto -->
                     <p routerLink="/contacto" (click)="isActive = false;">Contacto </p>
                     <ng-icon class="ml-2" name="heroPhoneSolid" />
+                </div>
+
+                <!-- Menu institucional -->
+                <div class="flex justify-center flex-col items-center mx-10 relative py-4 cursor-pointer">
+                    <!-- Texto -->
+                    <div class="flex items-center justify-center" (click)="toggleDiv(resDivForm, resDivTur)">
+                        <p>Formularios </p>
+                        <ng-icon class="ml-2" name="heroChevronDownSolid" />
+                    </div>
+
+                    <!-- Menú -->
+                    <div class="hide" #resDivForm>
+                        <div class="w-auto flex flex-col">
+                            <a class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('afiliacion')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario de
+                                asociación</a>
+                            <a class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('gestion')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario
+                                gestión</a>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('nacimiento')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario por nacimiento
+                            </p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('sem')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario SEM
+                            </p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('matrimonio')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario por
+                                casamiento
+                            </p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('jubilacion')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario por
+                                jubilación
+                            </p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('actualizacion')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario
+                                actualización de datos
+                            </p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('fallecimiento')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario por
+                                fallecimiento
+                            </p>
+                            <p class="py-2 px-6 hover:bg-gray-200 transition-all
+                            duration-200 cursor-pointer" (click)="showFormulario('garantias')"
+                                (click)="isActive = false; toggleDiv(resDivForm)">Formulario carnet de
+                                garantías
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
