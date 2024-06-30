@@ -4,7 +4,7 @@ import {
   Input,
   ViewChild,
   ViewContainerRef,
-  inject
+  inject,
 } from '@angular/core';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { heroEyeSolid } from '@ng-icons/heroicons/solid';

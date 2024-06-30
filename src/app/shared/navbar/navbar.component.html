@@ -54,7 +54,7 @@
         </div>
         <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
             <!-- Texto -->
-            <p>Quiero ser socio / a </p>
+            <p routerLink="/socios">Quiero ser socio / a </p>
         </div>
         <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
             <!-- Texto -->
@@ -136,11 +136,11 @@
                 </div>
                 <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
                     <!-- Texto -->
-                    <p>Quiero ser socio / a </p>
+                    <p routerLink="/socios" (click)="isActive = false;">Quiero ser socio / a </p>
                 </div>
                 <div class="flex justify-center items-center mx-10 relative py-4 cursor-pointer">
                     <!-- Texto -->
-                    <p routerLink="/contacto">Contacto </p>
+                    <p routerLink="/contacto" (click)="isActive = false;">Contacto </p>
                     <ng-icon class="ml-2" name="heroPhoneSolid" />
                 </div>
             </div>

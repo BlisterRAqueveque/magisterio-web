@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Delegaciones } from '../../../interfaces/delegaciones.interface';
+import { DelegacionesI } from '../../../interfaces/delegaciones.interface';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './delegaciones.component.scss',
 })
 export class DelegacionesComponent {
-  delegaciones: Delegaciones[] = [
+  delegaciones: DelegacionesI[] = [
     {
       id: 2,
       nombre: 'CATRIEL',

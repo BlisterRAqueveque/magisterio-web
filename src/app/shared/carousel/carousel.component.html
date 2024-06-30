@@ -1,7 +1,7 @@
 <div class="pt-12">
     <!-- <swiper-container slides-per-view="1" loop="true" navigation="true" speed="500" pagination="true"  scrollbar="true"> -->
-    <swiper-container slides-per-view="1" loop="true" navigation="true" speed="500" pagination="true" autoplay="true"
-        delay="500">
+    <swiper-container id="swiper" slides-per-view="1" loop="true" navigation="true" speed="500" pagination="true"
+        autoplay="true" delay="500">
         @for (img of images; track $index) {
         <swiper-slide>
             <div class="w-full h-screen flex justify-center items-center relative">

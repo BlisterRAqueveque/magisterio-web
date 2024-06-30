@@ -1,0 +1,52 @@
+<div class="relative py-20 mt-10">
+    <h1 class="text-3xl text-center text-white"><b>{{ years }} años junto a los docentes rionegrinos | Asociese</b></h1>
+    <h4 class="text-xl text-center z-10 text-white px-4 mt-2">
+        Hace {{ years }} años, nacía la Mutual para el Magisterio Rionegrino, por la valentía e
+        inspiración de muchos maestros/as pioneros/as que, en una provincia joven, buscaban unirse para formar un
+        espacio solidario: el primer eslabón de una gran cadena que sirviera de contención y ayuda mutua.Hoy, como
+        entonces, seguimos esa senda; gracias al aporte y compromiso de todos/as nuestros/as asociados/as hemos logrado
+        agregar muchos eslabones más a esta gran cadena solidaria.</h4>
+
+    <div class="px-20 mt-10">
+        <div class="bg-gray-700 rounded-md border-gray-500 border">
+            <div class="grid grid-cols-12 gap-4 pt-6 px-4 my-4">
+                <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
+                    <label for="name">Nombre completo</label>
+                    <input placeholder="Ingrese su nombre completo"
+                        class="bg-gray-500 p-2 text-base rounded-md border border-gray-400" id="name" type="text">
+                </div>
+
+                <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
+                    <label for="email">Correo</label>
+                    <input placeholder="Ingrese correo electrónico"
+                        class="bg-gray-500 p-2 text-base rounded-md border border-gray-400" id="email" type="email">
+                </div>
+                <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
+                    <label for="phone">Teléfono</label>
+                    <input placeholder="Ingrese n° de teléfono"
+                        class="bg-gray-500 p-2 text-base rounded-md border border-gray-400" id="phone" type="tel">
+                </div>
+                <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
+                    <label>Delegación</label>
+                    <select class="bg-gray-500 p-2 text-base rounded-md border border-gray-400">
+                        <option value="">Seleccione una delegación</option>
+                        @for (d of delegaciones; track $index) {
+                        <option [value]="d.id">{{ d.nombre }}</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="col-span-12 p-4 flex justify-end items-end">
+                    <button class="px-7 py-2 rounded-md border-2 border-sky-950 mt-3 text-xl
+                        bg-sky-950 text-white" (click)="sendForm()">
+                        Enviar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="absolute w-full top-0 h-1/2 bg-black -z-10 image"></div>
+    <div class="absolute w-full top-0 h-1/2 bg-gray-800/60 -z-10"></div>
+    <div class="absolute w-full bottom-0 h-1/2 bg-gray-800 -z-10"></div>
+</div>

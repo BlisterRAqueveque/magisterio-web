@@ -1,10 +1,10 @@
-export interface Delegaciones {
+export interface DelegacionesI {
   id: number;
   nombre: string;
-  delegados: Delegado[];
+  delegados: DelegadoI[];
 }
 
-interface Delegado {
+interface DelegadoI {
   nombre: string;
   tel: string;
   fax: string;

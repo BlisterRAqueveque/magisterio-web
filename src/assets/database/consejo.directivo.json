@@ -1,0 +1,84 @@
+{
+  "ok": true,
+  "msg": "Approved",
+  "result": [
+    {
+      "cargo": "PRESIDENTE",
+      "nombre": "BICHARRA, PEDRO DAVID",
+      "n_socio": "12413/7",
+      "dni": "22.124.919"
+    },
+    {
+      "cargo": "VICEPRESIDENTE",
+      "nombre": "PAZ, ANGEL OSCAR",
+      "n_socio": "11764/6",
+      "dni": "23.240.586"
+    },
+    {
+      "cargo": "SECRETARIO/A",
+      "nombre": "MORON, PABLO ERNESTO",
+      "n_socio": "18054/8",
+      "dni": "20.968.324"
+    },
+    {
+      "cargo": "PROSECRETARIO/A",
+      "nombre": "AUMEDES, MARÍA CECILIA",
+      "n_socio": "1148/7",
+      "dni": "10.442.332"
+    },
+    {
+      "cargo": "TESORERO/A",
+      "nombre": "SHEFFIELD, ALFREDO MARTIN",
+      "n_socio": "5605/7",
+      "dni": "13.850.347"
+    },
+    {
+      "cargo": "PROTESORERO",
+      "nombre": "SANDOVAL, RUBEN",
+      "n_socio": "10381/4",
+      "dni": "17.065.349"
+    },
+    {
+      "cargo": "1° VOCAL TITULAR",
+      "nombre": "VIDAL, JOSÉ MANUEL",
+      "n_socio": "7334/2",
+      "dni": "17.296.278"
+    },
+    {
+      "cargo": "2° VOCAL TITULAR",
+      "nombre": "CARMONA, LILIA",
+      "n_socio": "2943/2",
+      "dni": "12.143.318"
+    },
+    {
+      "cargo": "3° VOCAL TITULAR",
+      "nombre": "ALTAMIRANO, MARIA CECILIA",
+      "n_socio": "10726/0",
+      "dni": "16.638.494"
+    },
+    {
+      "cargo": "1° VOCAL SUPLENTE",
+      "nombre": "PORRO, VIVIANA BETRÍZ",
+      "n_socio": "14910/3",
+      "dni": "16.590.152"
+    },
+    {
+      "cargo": "2° VOCAL SUPLENTE",
+      "nombre": "NUSKE, MARIELA ANDREA",
+      "n_socio": "8791/2",
+      "dni": "20.483.827"
+    },
+    {
+      "cargo": "3° VOCAL SUPLENTE",
+      "nombre": "LUCHETTI, MARIZA",
+      "n_socio": "3967/5",
+      "dni": "12.800.894"
+    },
+    {
+      "cargo": "4° VOCAL SUPLENTE",
+      "nombre": "GONZALES, LANDRA LIANA MARIA",
+      "n_socio": "18461/6",
+      "dni": "25.520.839"
+    }
+  ]
+}

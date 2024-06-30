@@ -1,6 +1,6 @@
 <!-- Solve responsive -->
 <section id="somos" class="relative overflow-hidden">
-    
+
     <!-- Parallax effect -->
     <div class="parallax" ngx-parallax></div>
 
@@ -52,21 +52,11 @@
     <div class="grid grid-cols-12 gap-4 pt-24 md:pt-20 lg:pt-16 px-4 pb-8 bg-white">
         <div class="lg:col-span-4 sm:col-span-12 md:col-span-4 col-span-12 flex justify-center">
             <div>
-                <h1 class="font-bold text-2xl mb-2">Consejo directivo:</h1>
+                <h1 class="font-bold text-2xl mb-2">CONSEJO DIRECTIVO:</h1>
                 <ol class="list-decimal list-inside">
-                    <li><b>PRESIDENTE: </b>Pedro David BICHARA</li>
-                    <li><b>VICEPRESIDENTE: </b>José Manuel VIDAL</li>
-                    <li><b>SECRETARIA: </b>Viviana Beatriz PORRO</li>
-                    <li><b>PRO-SECRETARIA: </b>Maria Cecilia AUMEDES</li>
-                    <li><b>TESORERA: </b>Elena del Tránsito RODRIGUEZ</li>
-                    <li><b>PRO-TESORERA: </b>Monica Alejandra HERNANDEZ</li>
-                    <li><b>1º VOCAL TITULAR: </b>Julia Argentina PAEZ</li>
-                    <li><b>2º VOCAL TITULAR: </b>Ruben SANDOVAL</li>
-                    <li><b>3º VOCAL TITULAR: </b>Maria Doris LASCANO</li>
-                    <li><b>1º VOCAL SUPLENTE: </b>Andrea Beatriz RONCATI</li>
-                    <li><b>2º VOCAL SUPLENTE: </b>Oscar Alfredo OSES</li>
-                    <li><b>3º VOCAL SUPLENTE: </b>Ana Maria ASCENZI</li>
-                    <li><b>4º VOCAL SUPLENTE: </b>Nilda Ines ARANIBE</li>
+                    @for (c of consejo; track $index) {
+                    <li><b>{{ c.cargo }}: </b>{{ c.nombre }}</li>
+                    }
                 </ol>
             </div>
         </div>
@@ -74,12 +64,9 @@
             <div>
                 <h1 class="font-bold text-2xl mb-2">JUNTA DE FISCALIZACIÓN</h1>
                 <ol class="list-decimal list-inside">
-                    <li><b>1º MIEMBRO TITULAR: </b>Noemi Susana SANCHEZ</li>
-                    <li><b>2º MIEMBRO TITULAR: </b>Lilia CARMONA</li>
-                    <li><b>3º MIEMBRO TITULAR: </b>Lorenzo WOZNI</li>
-                    <li><b>1º MIEMBRO SUPLENTE: </b>Liliana Edit RODRIGUEZ</li>
-                    <li><b>2º MIEMBRO SUPLENTE: </b>Vacante por corrimiento</li>
-                    <li><b>3º MIEMBRO SUPLENTE: </b>Vacante por corrimiento</li>
+                    @for (j of junta; track $index) {
+                    <li><b>{{ j.cargo }}: </b>{{ j.nombre }}</li>
+                    }
                 </ol>
             </div>
         </div>

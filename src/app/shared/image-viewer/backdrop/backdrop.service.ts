@@ -1,20 +1,18 @@
 import {
+  ApplicationRef,
+  ComponentFactoryResolver,
+  ComponentRef,
+  EmbeddedViewRef,
   Injectable,
   Injector,
-  ComponentFactoryResolver,
-  EmbeddedViewRef,
-  ApplicationRef,
-  ViewContainerRef,
-  ComponentRef,
+  inject
 } from '@angular/core';
 
 @Injectable()
 export class DomService {
-  constructor(
-    private componentFactoryResolver: ComponentFactoryResolver,
-    private appRef: ApplicationRef,
-    private injector: Injector
-  ) {}
+  private componentFactoryResolver = inject(ComponentFactoryResolver);
+  private appRef = inject(ApplicationRef);
+  private injector = inject(Injector);
 
   $component!: any;
   componentRef!: ComponentRef<unknown>;

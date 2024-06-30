@@ -1,13 +1,12 @@
 import { ApplicationConfig } from '@angular/core';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import {
-  InMemoryScrollingOptions,
-  provideRouter,
-  withInMemoryScrolling,
+  provideRouter
 } from '@angular/router';
 
 import { provideHttpClient } from '@angular/common/http';
 import { routes } from './app.routes';
+import { DialogService } from './shared/confirm-dialog/dialog.service';
 import { DomService } from './shared/image-viewer/backdrop/backdrop.service';
 
 // const scrollConfig: InMemoryScrollingOptions = {
@@ -29,5 +28,6 @@ export const appConfig: ApplicationConfig = {
     provideAnimations(),
     provideHttpClient(/*withInterceptors([jwtInterceptor])*/),
     DomService,
+    DialogService,
   ],
 };

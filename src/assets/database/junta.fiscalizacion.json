@@ -1,0 +1,42 @@
+{
+  "ok": true,
+  "msg": "Approved",
+  "result": [
+    {
+      "cargo": "1° MIEMBRO TITULAR",
+      "nombre": "RODRIGUEZ, ELENA DEL TRANSITO",
+      "n_socio": "17217/0",
+      "dni": "10.461.784"
+    },
+    {
+      "cargo": "2° MIEMBRO TITULAR",
+      "nombre": "RODRIGUEZ, LILIANA",
+      "n_socio": "3237/9",
+      "dni": "6.078.140"
+    },
+    {
+      "cargo": "3° MIEMBRO TITULAR",
+      "nombre": "NAIN, MARIA LAURA",
+      "n_socio": "19765/3",
+      "dni": "25.510.540"
+    },
+    {
+      "cargo": "1° MIEMBRO SUPLENTE",
+      "nombre": "COELHO, LILIA BEATRIZ",
+      "n_socio": "6905/1",
+      "dni": "10.565.991"
+    },
+    {
+      "cargo": "2° MIEMBRO SUPLENTE",
+      "nombre": "RISTOL, MARIA DEL CARMEN",
+      "n_socio": "863/0",
+      "dni": "10.045.291"
+    },
+    {
+      "cargo": "3° MIEMBRO SUPLENTE",
+      "nombre": "LOPEZ, ELDA SUSANA",
+      "n_socio": "19019/5",
+      "dni": "11.796.142"
+    }
+  ]
+}

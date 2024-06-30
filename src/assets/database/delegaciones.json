@@ -1,0 +1,94 @@
+{
+  "ok": true,
+  "msg": "Approved",
+  "result": [
+    {
+      "id": 1,
+      "nombre": "Allen"
+    },
+    {
+      "id": 2,
+      "nombre": "Catriel"
+    },
+    {
+      "id": 3,
+      "nombre": "Chimpay"
+    },
+    {
+      "id": 4,
+      "nombre": "Choele Choel"
+    },
+    {
+      "id": 5,
+      "nombre": "Cinco Saltos"
+    },
+    {
+      "id": 6,
+      "nombre": "Cipolletti"
+    },
+    {
+      "id": 7,
+      "nombre": "El Bolson"
+    },
+    {
+      "id": 8,
+      "nombre": "General Conesa"
+    },
+    {
+      "id": 9,
+      "nombre": "General Roca"
+    },
+    {
+      "id": 10,
+      "nombre": "Ing. Huego"
+    },
+    {
+      "id": 11,
+      "nombre": "Ing. Jacobaci"
+    },
+    {
+      "id": 12,
+      "nombre": "Los Menucos"
+    },
+    {
+      "id": 13,
+      "nombre": "Maquinchao"
+    },
+    {
+      "id": 14,
+      "nombre": "Ramos Mexia"
+    },
+    {
+      "id": 15,
+      "nombre": "Rio Colorado"
+    },
+    {
+      "id": 16,
+      "nombre": "San Antonio Oeste"
+    },
+    {
+      "id": 17,
+      "nombre": "San Carlos de Bariloche"
+    },
+    {
+      "id": 18,
+      "nombre": "Sierra Colorada"
+    },
+    {
+      "id": 19,
+      "nombre": "Sierra Grande"
+    },
+    {
+      "id": 20,
+      "nombre": "Valcheta"
+    },
+    {
+      "id": 21,
+      "nombre": "Viedma"
+    },
+    {
+      "id": 22,
+      "nombre": "Villa Regina"
+    }
+  ]
+}

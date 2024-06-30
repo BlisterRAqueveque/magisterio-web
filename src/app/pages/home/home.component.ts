@@ -12,6 +12,8 @@ import { PrincipiosComponent } from './principios/principios.component';
 import { DelegacionesComponent } from './delegaciones/delegaciones.component';
 import { ResolucionesComponent } from './resoluciones/resoluciones.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
+import { SpinnerComponent } from '../../shared/spinner/spinner.component';
+import { Loading } from '../../shared/spinner/service/loading.service';
 
 @Component({
   selector: 'app-home',
@@ -25,6 +27,7 @@ import { FooterComponent } from '../../shared/footer/footer.component';
     DelegacionesComponent,
     ResolucionesComponent,
     FooterComponent,
+    SpinnerComponent,
   ],
   providers: [provideIcons({ heroChevronDownSolid, heroPhoneSolid })],
   templateUrl: './home.component.html',
@@ -32,7 +35,6 @@ import { FooterComponent } from '../../shared/footer/footer.component';
 })
 export class HomeComponent {
   private route: ActivatedRoute = inject(ActivatedRoute);
-
   ngOnInit(): void {
     this.route.fragment.subscribe((data) => {
       setTimeout(() => {
