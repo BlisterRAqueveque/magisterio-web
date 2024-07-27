@@ -53,7 +53,7 @@ export class TurismoComponent {
       const divs = document.querySelectorAll('.selectable');
       divs.forEach((d) => {
         d.classList.remove('text-black');
-        d.classList.add('text-gray-500');
+        d.classList.add('text-mag-500');
       });
 
       //! Obtenemos el width y el height
@@ -79,7 +79,7 @@ export class TurismoComponent {
 
       //! Agregamos los estilos al texto:
       indexDiv?.classList.add('text-black');
-      indexDiv?.classList.remove('text-gray-500');
+      indexDiv?.classList.remove('text-mag-500');
 
       // Y rotamos la card para que no se vea la transición al romperse los contenedores
       const card = document.getElementById('card');
