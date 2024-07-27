@@ -2,7 +2,7 @@
     z-50 transition-all duration-100" id="backdrop">
 
     <div class="flex flex-col items-center px-16 pt-16 rounded-2xl bg-white relative max-w-full z-50">
-        <div class="rounded-full bg-sky-800 inline-flex justify-center items-center h-32 w-32 -mt-8 absolute -top-8">
+        <div class="rounded-full bg-mag-800 inline-flex justify-center items-center h-32 w-32 -mt-8 absolute -top-8">
             <ng-icon name="{{ !error ? 'heroQuestionMarkCircleSolid' : 'heroExclamationTriangleSolid' }}" size="5rem"
                 class="text-white" />
         </div>
@@ -10,7 +10,7 @@
         <p class="mb-0 w-full break-words">{{ message }}</p>
         @if(haveConfirmButton) {
         <div class="flex items-center justify-between mt-4 w-full">
-            <button class="bg-sky-950 text-white rounded-md shadow-md p-3 m-3"
+            <button class="bg-mag-950 text-white rounded-md shadow-md p-3 m-3"
                 (click)="confirmAction()">Aceptar</button>
             <button class="bg-red-950 text-white rounded-md shadow-md p-3 m-3 cancel"
                 (click)="close()">Cancelar</button>
@@ -18,7 +18,7 @@
         }
         @else {
         <div class="flex items-center justify-end mt-4 w-full">
-            <button class="bg-sky-950 text-white rounded-md shadow-md p-3 m-3" (click)="close()">Aceptar</button>
+            <button class="bg-mag-950 text-white rounded-md shadow-md p-3 m-3" (click)="close()">Aceptar</button>
         </div>
         }
     </div>
