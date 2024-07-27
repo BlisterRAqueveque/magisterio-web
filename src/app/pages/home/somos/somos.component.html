@@ -50,7 +50,7 @@
     </div>
 
     <div class="grid grid-cols-12 gap-4 pt-24 md:pt-20 lg:pt-16 px-4 pb-8 bg-white">
-        <div class="lg:col-span-4 sm:col-span-12 md:col-span-4 col-span-12 flex justify-center">
+        <div class="lg:col-span-6 sm:col-span-12 md:col-span-6 col-span-12 flex justify-center">
             <div>
                 <h1 class="font-bold text-2xl mb-2">CONSEJO DIRECTIVO:</h1>
                 <ol class="list-decimal list-inside">
@@ -60,26 +60,13 @@
                 </ol>
             </div>
         </div>
-        <div class="lg:col-span-4 sm:col-span-12 md:col-span-4 col-span-12 flex justify-center">
+        <div class="lg:col-span-6 sm:col-span-12 md:col-span-6 col-span-12 flex justify-center">
             <div>
                 <h1 class="font-bold text-2xl mb-2">JUNTA DE FISCALIZACIÓN</h1>
                 <ol class="list-decimal list-inside">
                     @for (j of junta; track $index) {
                     <li><b>{{ j.cargo }}: </b>{{ j.nombre }}</li>
                     }
-                </ol>
-            </div>
-        </div>
-        <div class="lg:col-span-4 sm:col-span-12 md:col-span-4 col-span-12 flex justify-center">
-            <div>
-                <h1 class="font-bold text-2xl mb-2">JUNTA DE DISCIPLINA</h1>
-                <ol class="list-decimal list-inside">
-                    <li><b>1º MIEMBRO TITULAR: </b>Sonia PERUGINI</li>
-                    <li><b>2º MIEMBRO TITULAR: </b>Miryam ROA</li>
-                    <li><b>3º MIEMBRO TITULAR: </b>Lidia Margarita DOBERER</li>
-                    <li><b>1º MIEMBRO SUPLENTE: </b>Maria COLON</li>
-                    <li><b>2º MIEMBRO SUPLENTE: </b>Laura MUÑOZ</li>
-                    <li><b>3º MIEMBRO SUPLENTE: </b>Erla Daysi GIRETTI</li>
                 </ol>
             </div>
         </div>

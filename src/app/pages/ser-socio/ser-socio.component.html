@@ -8,27 +8,27 @@
         agregar muchos eslabones más a esta gran cadena solidaria.</h4>
 
     <div class="px-20 mt-10">
-        <div class="bg-gray-700 rounded-md border-gray-500 border">
+        <div class="bg-mag-700 rounded-md border-mag-500 border">
             <div class="grid grid-cols-12 gap-4 pt-6 px-4 my-4">
                 <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
                     <label for="name">Nombre completo</label>
                     <input placeholder="Ingrese su nombre completo"
-                        class="bg-gray-500 p-2 text-base rounded-md border border-gray-400" id="name" type="text">
+                        class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 placeholder:text-mag-200" id="name" type="text">
                 </div>
 
                 <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
                     <label for="email">Correo</label>
                     <input placeholder="Ingrese correo electrónico"
-                        class="bg-gray-500 p-2 text-base rounded-md border border-gray-400" id="email" type="email">
+                        class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 placeholder:text-mag-200" id="email" type="email">
                 </div>
                 <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
                     <label for="phone">Teléfono</label>
                     <input placeholder="Ingrese n° de teléfono"
-                        class="bg-gray-500 p-2 text-base rounded-md border border-gray-400" id="phone" type="tel">
+                        class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 placeholder:text-mag-200" id="phone" type="tel">
                 </div>
                 <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
                     <label>Delegación</label>
-                    <select class="bg-gray-500 p-2 text-base rounded-md border border-gray-400">
+                    <select class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 text-mag-200">
                         <option value="">Seleccione una delegación</option>
                         @for (d of delegaciones; track $index) {
                         <option [value]="d.id">{{ d.nombre }}</option>
@@ -48,5 +48,5 @@
 
     <div class="absolute w-full top-0 h-1/2 bg-black -z-10 image"></div>
     <div class="absolute w-full top-0 h-1/2 bg-gray-800/60 -z-10"></div>
-    <div class="absolute w-full bottom-0 h-1/2 bg-gray-800 -z-10"></div>
+    <div class="absolute w-full bottom-0 h-1/2 bg-mag-800 -z-10"></div>
 </div>
