@@ -5,7 +5,7 @@
         @for (img of images; track $index) {
         <swiper-slide>
             <div class="w-full h-screen flex justify-center items-center relative">
-                <img src="{{img.background}}" class="absolute h-full w-full -z-10 object-cover">
+                <img src="{{url + img.background}}" class="absolute h-full w-full -z-10 object-cover">
                 <div class="w-full h-1/2 bg-white/60 flex flex-col justify-center items-center">
                     <h1 class="lg:text-4xl sm:text-xl text-mag-950 font-bold">{{img.title}}</h1>
                     <h4 class="lg:text-2xl sm:text-base p-14 ">{{img.subtitle}}</h4>

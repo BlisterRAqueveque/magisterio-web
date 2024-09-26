@@ -17,13 +17,13 @@
             <p><b>Visto: </b>{{resol.visto}}</p>
             <p class="my-3"><b>Y considerando:</b></p>
             <ul class="list-disc px-10">
-                @for(c of resol.considerando; track c) {
-                <li>{{c}}</li>
+                @for(c of resol.consideraciones; track c) {
+                <li>{{c.consideracion}}</li>
                 }
             </ul>
             <p class="my-3"><b>Por ello, el CONSEJO DIRECTIVO DE LA MUTUAL para el MAGISTERIO RIONEGRINO resuelve:</b>
             </p>
-            @for(a of resol.articulo; track a) {
+            @for(a of resol.articulos; track a) {
             <p><b>Art. {{a.art}}°: </b>{{a.desc}}</p>
             }
         </div>

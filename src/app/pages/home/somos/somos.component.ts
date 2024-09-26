@@ -3,7 +3,7 @@ import { ParallaxStandaloneDirective } from '@yoozly/ngx-parallax';
 import { JuntaFiscalizacionService } from '../../../services/junta.fiscalizacion.service';
 import { ConsejoDirectivoService } from '../../../services/consejo.directivo.service';
 import { firstValueFrom } from 'rxjs';
-import { JuntaFizcalizacionI } from '../../../interfaces/junta.fiscalizacion.interface';
+import { JuntaFiscalizacionI } from '../../../interfaces/junta.fiscalizacion.interface';
 import { ConsejoDirectivoI } from '../../../interfaces/consejo.directivo.interface';
 
 @Component({
@@ -17,7 +17,7 @@ export class SomosComponent {
   serviceJunta = inject(JuntaFiscalizacionService);
   serviceConsejo = inject(ConsejoDirectivoService);
 
-  junta: JuntaFizcalizacionI[] = [];
+  junta: JuntaFiscalizacionI[] = [];
   consejo: ConsejoDirectivoI[] = [];
 
   async ngOnInit() {
@@ -26,8 +26,12 @@ export class SomosComponent {
 
   async getData() {
     try {
-      this.junta = await firstValueFrom(this.serviceJunta.getConsejo());
-      this.consejo = await firstValueFrom(this.serviceConsejo.getConsejo());
+      this.junta = (
+        await firstValueFrom(this.serviceJunta.getConsejo())
+      ).result;
+      this.consejo = (
+        await firstValueFrom(this.serviceConsejo.getConsejo())
+      ).result;
     } catch (error) {
       console.error(error);
     }

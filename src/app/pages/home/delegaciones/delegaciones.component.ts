@@ -1,7 +1,11 @@
-import { Component } from '@angular/core';
-import { DelegacionesI } from '../../../interfaces/delegaciones.interface';
+import { Component, inject } from '@angular/core';
+import {
+  CasaHorarioI,
+  CasaMutualI,
+} from '../../../interfaces/delegaciones.interface';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { CasaMutualService, DelegacionesService } from '../../../services';
 
 @Component({
   selector: 'delegaciones',
@@ -11,46 +15,26 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './delegaciones.component.scss',
 })
 export class DelegacionesComponent {
-  delegaciones: DelegacionesI[] = [
-    {
-      id: 2,
-      nombre: 'CATRIEL',
-      delegados: [
-        {
-          nombre: 'CARRASCO, Griselda',
-          tel: '299 491 3358',
-          fax: '4912000',
-          domicilio: 'Formosa 572',
-          horarios: 'Lunes 18:00 a 21:00',
-        },
-        {
-          nombre: 'PEREYRA, Jorge H.',
-          tel: '',
-          fax: '02920 15247015',
-          domicilio: '',
-          horarios: 'Martes a viernes 09:00 a 12:00',
-        },
-      ],
-    },
-    {
-      id: 3,
-      nombre: 'CINCO SALTOS',
-      delegados: [
-        {
-          nombre: 'WENDT, Eleonora',
-          tel: '299 498 2270',
-          fax: '4981197',
-          domicilio: 'Don Bosco 121',
-          horarios: 'Lunes, martes, miércoles y viernes 08:30 a 12:30',
-        },
-        {
-          nombre: 'GUTIERREZ, Maria I.',
-          tel: '',
-          fax: '',
-          domicilio: '',
-          horarios: 'Jueves 15:00 a 19:00',
-        },
-      ],
-    },
-  ];
+  private readonly service = inject(CasaMutualService);
+  private readonly serviceD = inject(DelegacionesService);
+
+  casas_mutuales: CasaMutualI[] = [];
+
+  ngOnInit() {
+    this.service.getCasas().subscribe((data) => {
+      console.log(data);
+      this.casas_mutuales = [...this.casas_mutuales, ...data.result];
+      this.casas_mutuales.sort((a, b) => a.co - b.co);
+    });
+    this.serviceD.getDelegaciones().subscribe((data) => {
+      this.casas_mutuales = [...this.casas_mutuales, ...data.result];
+      this.casas_mutuales.sort((a, b) => a.co - b.co);
+    });
+  }
+
+  printHorarios(horarios: CasaHorarioI[]) {
+    if (horarios ? horarios.length > 0 : false)
+      return horarios.map((i) => i.horario).join(', ');
+    else return 'Sin horarios definidos';
+  }
 }

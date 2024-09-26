@@ -1,11 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { environment } from '../../environments/environment.development';
 import { catchError, map } from 'rxjs';
-import { NoticiasI } from '../interfaces/noticias.interface';
+import { environment } from '../../environments/environment';
+import { ResolucionesI } from '../interfaces/resoluciones.interface';
 import { ResponseI } from '../interfaces/response.interface';
 import { handleError } from '../tools/handle-error';
-import { ResolucionesI } from '../interfaces/resoluciones.interface';
 
 @Injectable({ providedIn: 'root' })
 export class ResolucionesService {
@@ -13,10 +12,10 @@ export class ResolucionesService {
   private readonly url = environment.apiURL;
 
   getResoluciones() {
-    const direction = `${this.url}/resoluciones.json`;
+    const direction = `${this.url}resoluciones`;
     return this.http.get<ResponseI>(direction).pipe(
       catchError((e) => handleError(e)),
-      map((data) => data.result as ResolucionesI[])
+      map((data) => data.result as { result: ResolucionesI[]; count: number })
     );
   }
 }

@@ -19,6 +19,7 @@ export class DialogComponent {
 
   present(resol: ResolucionesI) {
     this.resol = resol;
+    this.resol.articulos.sort((a, b) => a.art - b.art);
     const body = document.getElementById('body-principal');
     body?.classList.add('overflow-hidden');
     this.visible = true;

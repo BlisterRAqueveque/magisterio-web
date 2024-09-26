@@ -17,7 +17,7 @@ export class ResolucionesComponent {
 
   ngOnInit() {
     this.service.getResoluciones().subscribe((data) => {
-      this.resoluciones = data;
+      this.resoluciones = data.result;
     });
   }
 

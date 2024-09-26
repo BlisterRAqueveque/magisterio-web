@@ -1,13 +1,33 @@
-export interface DelegacionesI {
+export interface CasaMutualI {
   id: number;
+  co: number;
   nombre: string;
-  delegados: DelegadoI[];
+  direccion: string;
+  tel: string;
+  cel: string;
+  correo: string;
+  cp: number;
+  fecha_creado: Date;
+  activo: boolean;
+
+  borrado_el: Date;
+
+  //creado_por: UsuarioI;
+
+  //usuarios: UsuarioI[];
+
+  //habitaciones: HabitacionI[];
+
+  //parcelas: ParcelaI[];
+
+  //horarios: HorarioI;
+
+  //ediciones: EdicionI[];
+
+  casa_horarios: CasaHorarioI[];
 }
 
-interface DelegadoI {
-  nombre: string;
-  tel: string;
-  fax: string;
-  domicilio: string;
-  horarios: string;
+export interface CasaHorarioI {
+  id: number;
+  horario: string;
 }

@@ -4,11 +4,29 @@
   "result": [
     {
       "id": 1,
-      "nombre": "Allen"
+      "co": 7,
+      "nombre": "Allen",
+      "tel": "0298 - 4452965",
+      "cel": "2920 - 247013",
+      "cp": 8307,
+      "domicilio": "Eva Peron 926",
+      "email": "mmrallen2018@gmail.com",
+      "casa_horarios": [
+        { "id": 1, "horario": "LUNES MIÉRCOLES Y VIER de 18:00 a 19:30hs" },
+        { "id": 2, "horario": "LUNES A VIERNES de 09 a 13:00hs" },
+        { "id": 3, "horario": "MIÉRCOLES DE 17hs A 19hs FO" }
+      ]
     },
     {
       "id": 2,
-      "nombre": "Catriel"
+      "co": 2,
+      "nombre": "Catriel",
+      "tel": "0299 - 4206870 F",
+      "cel": "2920 - 247015",
+      "cp": 8307,
+      "domicilio": "Formosa 724",
+      "email": "mmrcatriel@gmail.com",
+      "horarios": ["DE MARTES A VIERNES 18 A 21HS", "LUNES NO ATIENDE"]
     },
     {
       "id": 3,

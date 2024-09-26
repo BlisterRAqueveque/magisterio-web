@@ -1,3 +1,3 @@
 import { ConsejoDirectivoI } from './consejo.directivo.interface';
 
-export interface JuntaFizcalizacionI extends ConsejoDirectivoI {}
+export interface JuntaFiscalizacionI extends ConsejoDirectivoI {}

@@ -1,4 +1,4 @@
-<div id="delegaciones" class="relative overflow-hidden">
+<div id="casas_mutuales" class="relative overflow-hidden">
 
     <!-- Parallax effect -->
     <div class="parallax" ngx-parallax></div>
@@ -14,28 +14,30 @@
                 <tr>
                     <th>CO</th>
                     <th>DELEGACIÓN</th>
-                    <th>DELEGADO / A</th>
-                    <th>TELÉFONO</th>
-                    <th>FAX</th>
                     <th>DOMICILIO</th>
+                    <th>TELÉFONO</th>
                     <th>HORARIO</th>
                 </tr>
             </thead>
             <tbody>
-                @for(d of delegaciones; track d) {
-                @for(p of d.delegados; track p; let i = $index) {
+                @for(c of casas_mutuales; track c) {
                 <tr>
-                    @if(i=== 0){
-                    <td class="tg-0lax" [rowSpan]="d.delegados.length">{{i === 0 ? d.id : ''}}</td>
-                    <td class="tg-0lax" [rowSpan]="d.delegados.length">{{i === 0 ? d.nombre : ''}}</td> 
-                    }
-                    <td class="tg-0lax">{{p.nombre}}</td>
-                    <td class="tg-0lax">{{p.tel}}</td>
-                    <td class="tg-0lax">{{p.fax}}</td>
-                    <td class="tg-0lax">{{p.domicilio}}</td>
-                    <td class="tg-0lax">{{p.horarios}}</td>
+                    <td class="tg-0lax text-center align-middle">
+                        <p>
+                            {{ c.co }}
+                        </p>
+                    </td>
+                    <td class="tg-0lax">{{ c.nombre }}</td>
+                    <td class="tg-0lax">{{ c.direccion }}</td>
+                    <td class="tg-0lax">{{ c.tel }}</td>
+                    <td class="tg-0lax">
+                        @for (horario of c.casa_horarios; track $index) {
+                        <p>{{ horario.horario }}</p>
+                        } @empty {
+                        <p>Sin horarios definidos</p>
+                        }
+                    </td>
                 </tr>
-                }
                 }
             </tbody>
         </table>

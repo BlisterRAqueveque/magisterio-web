@@ -2,6 +2,7 @@ import { Component, inject } from '@angular/core';
 import { NoticiasService } from '../../services/noticias.service';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { NoticiasI } from '../../interfaces/noticias.interface';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-noticias',
@@ -11,6 +12,8 @@ import { NoticiasI } from '../../interfaces/noticias.interface';
   styleUrl: './noticias.component.scss',
 })
 export class NoticiasComponent {
+  url = environment.imgURL + 'noticias/';
+
   private readonly service = inject(NoticiasService);
   private readonly route = inject(ActivatedRoute);
   private readonly router = inject(Router);
@@ -23,8 +26,7 @@ export class NoticiasComponent {
       if (!id) this.router.navigate(['home']);
       this.service.getOneNoticia(+id).subscribe({
         next: (data) => {
-          if (data) this.noticia = data;
-          else this.router.navigate(['home']);
+          this.noticia = data;
         },
         error: (e) => {
           console.error(e);

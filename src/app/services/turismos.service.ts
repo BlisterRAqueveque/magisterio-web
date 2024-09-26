@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { catchError, map } from 'rxjs';
-import { environment } from '../../environments/environment.development';
+import { environment } from '../../environments/environment';
 import { ResponseI } from '../interfaces/response.interface';
 import { TurismosI } from '../interfaces/turismos.interface';
 import { handleError } from '../tools/handle-error';
@@ -9,7 +9,7 @@ import { handleError } from '../tools/handle-error';
 @Injectable({ providedIn: 'root' })
 export class TurismosService {
   private readonly http = inject(HttpClient);
-  private readonly url = environment.apiURL;
+  private readonly url = environment.webURL + 'assets/database';
 
   getTurismos() {
     const direction = `${this.url}/turismos.json`;

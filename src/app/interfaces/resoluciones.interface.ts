@@ -2,8 +2,8 @@ export interface ResolucionesI {
   id: number;
   resol: string;
   visto: string;
-  considerando: string[];
-  articulo: ArticulosI[];
+  consideraciones: ConsideracionI[];
+  articulos: ArticulosI[];
   lugar: string;
   fecha: string;
 }
@@ -11,4 +11,9 @@ export interface ResolucionesI {
 export interface ArticulosI {
   art: number;
   desc: string;
+}
+
+export interface ConsideracionI {
+  id: number;
+  consideracion: string;
 }
