@@ -17,3 +17,5 @@ export * from './resoluciones.interface';
 export * from './response.interface';
 
 export * from './turismos.interface';
+
+export * from './mail.interface';

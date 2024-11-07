@@ -5,44 +5,45 @@
         necesidades de
         su audiencia de manera temprana y frecuente.</h4>
 
-    <div class="px-20 mt-10">
+    <div class="lg:px-20 md:px-20 mt-10">
         <div class="bg-mag-700 rounded-md border-mag-500 border">
             <div class="grid grid-cols-12 gap-4 pt-6 px-4 my-4">
                 <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
                     <label for="name">Nombre</label>
                     <input placeholder="Ingrese nombre"
                         class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 placeholder:text-mag-200"
-                        id="name" type="text">
+                        id="name" type="text" [(ngModel)]="nombre">
                 </div>
                 <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
                     <label for="last_name">Apellido</label>
                     <input placeholder="Ingrese apellido"
                         class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 placeholder:text-mag-200"
-                        id="last_name" type="text">
+                        id="last_name" type="text" [(ngModel)]="apellido">
                 </div>
 
                 <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
                     <label for="email">Correo</label>
                     <input placeholder="Ingrese correo electrónico"
                         class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 placeholder:text-mag-200"
-                        id="email" type="email">
+                        id="email" type="email" [(ngModel)]="correo">
                 </div>
                 <div class="lg:col-span-6 sm:col-span-12 md:col-span-12 col-span-12 p-4 flex flex-col text-white">
                     <label for="phone">Teléfono</label>
                     <input placeholder="Ingrese n° de teléfono"
                         class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 placeholder:text-mag-200"
-                        id="phone" type="tel">
+                        id="phone" type="tel" [(ngModel)]="telefono">
                 </div>
 
                 <div class="col-span-12 p-4 flex flex-col text-white">
-                    <textarea placeholder="Deje su comentario"
+                    <textarea placeholder="Deje su consulta"
                         class="bg-mag-500 p-2 text-base rounded-md border border-mag-400 placeholder:text-mag-200"
-                        name="message" rows="4" id=""></textarea>
+                        name="message" rows="4" id="" [(ngModel)]="consulta"></textarea>
                 </div>
 
                 <div class="col-span-12 p-4 flex justify-end items-end">
                     <button class="px-7 py-2 rounded-md border-2 border-mag-950 mt-3 text-xl
-                        bg-mag-950 text-white" (click)="sendForm()">
+                        bg-mag-950 text-white"
+                        (click)="sendForm()">
                         Enviar consulta
                     </button>
                 </div>

@@ -3,110 +3,252 @@
   "msg": "Approved",
   "result": [
     {
-      "id": 1,
-      "co": 7,
-      "nombre": "Allen",
-      "tel": "0298 - 4452965",
-      "cel": "2920 - 247013",
+      "co": 2,
+      "nombre": "Catriel",
+      "tel": "0299 - 4913358",
+      "cel": "0299 - 15427015",
       "cp": 8307,
-      "domicilio": "Eva Peron 926",
-      "email": "mmrallen2018@gmail.com",
+      "direccion": "Formosa 572",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 18:00 a 21:00" }]
+    },
+    {
+      "co": 3,
+      "nombre": "Cinco Saltos",
+      "tel": "0299 - 4982270",
+      "cel": "2920 - 15247015",
+      "direccion": "Don Bosco 121",
+      "email": null,
       "casa_horarios": [
-        { "id": 1, "horario": "LUNES MIÉRCOLES Y VIER de 18:00 a 19:30hs" },
-        { "id": 2, "horario": "LUNES A VIERNES de 09 a 13:00hs" },
-        { "id": 3, "horario": "MIÉRCOLES DE 17hs A 19hs FO" }
+        {
+          "horario": "Lunes, Martes, Miércoles, Viernes de 09:00 a 13:00"
+        },
+        { "horario": "Jueves de 15:00 a 19:00" }
       ]
     },
     {
-      "id": 2,
-      "co": 2,
-      "nombre": "Catriel",
-      "tel": "0299 - 4206870 F",
-      "cel": "2920 - 247015",
+      "co": 5,
+      "nombre": "Cipolletti",
+      "tel": "0299 - 4782890",
+      "cel": "2920 - 15247009",
+      "direccion": "Miguel Muñoz 650",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Lunes de 15:00 a 19:00" },
+        { "horario": "Miércoles de 15:00 a 19:00" },
+        { "horario": "Viernes de 15:00 a 19:00" }
+      ]
+    },
+    {
+      "co": 7,
+      "nombre": "Allen",
+      "tel": "0298 - 4452965",
+      "cel": "2920 - 15247013",
       "cp": 8307,
-      "domicilio": "Formosa 724",
-      "email": "mmrcatriel@gmail.com",
-      "horarios": ["DE MARTES A VIERNES 18 A 21HS", "LUNES NO ATIENDE"]
+      "direccion": "San Martín 428",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Lunes de 09:00 a 13:00" },
+        { "horario": "Martes de 09:00 a 13:00" },
+        { "horario": "Jueves de 09:00 a 13:00" },
+        { "horario": "Viernes de 09:00 a 13:00" }
+      ]
     },
     {
-      "id": 3,
-      "nombre": "Chimpay"
+      "co": 8,
+      "nombre": "Roca",
+      "tel": "0298 - 4424885",
+      "cel": "2920 - 15204781",
+      "direccion": "Rodhe 446",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Lunes a Viernes de 08:00 a 12:00" },
+        { "horario": "Lunes a Viernes de 18:00 a 20:00" }
+      ]
     },
     {
-      "id": 4,
-      "nombre": "Choele Choel"
+      "co": 11,
+      "nombre": "Huergo",
+      "tel": "0298 - 4481342",
+      "cel": "2920 - 15247016",
+      "direccion": "Colón 695",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Lunes, Miércoles y Viernes de 08:00 a 13:00" }
+      ]
     },
     {
-      "id": 5,
-      "nombre": "Cinco Saltos"
+      "co": 13,
+      "nombre": "Villa Regina",
+      "tel": "0298 - 4462658",
+      "cel": "446004 Fax 439121",
+      "direccion": "Vita de Obligado 1040",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 08:00 a 12:00" }]
     },
     {
-      "id": 6,
-      "nombre": "Cipolletti"
+      "co": 15,
+      "nombre": "Chimpay",
+      "tel": "02946 - 446940",
+      "cel": "2920 - 15247018",
+      "direccion": "Ayda Laure y Los Ceibos",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 17:00 a 20:00" }]
     },
     {
-      "id": 7,
-      "nombre": "El Bolson"
+      "co": 17,
+      "nombre": "Río Colorado",
+      "tel": "02931 - 430816",
+      "cel": "2920 - 15607910",
+      "direccion": "Urquiza 468",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes de 14:30 a 18:30" }]
     },
     {
-      "id": 8,
-      "nombre": "General Conesa"
+      "co": 20,
+      "nombre": "Gral. Conesa",
+      "tel": "02920 - 15552484",
+      "cel": "2920 - 15609528",
+      "direccion": "Sarmiento 627",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Lunes y Miércoles de 16:00 a 19:00" },
+        { "horario": "Viernes de 16:00 a 19:00" }
+      ]
     },
     {
-      "id": 9,
-      "nombre": "General Roca"
+      "co": 24,
+      "nombre": "Los Menucos",
+      "tel": "02940 - 492075",
+      "cel": "492121",
+      "direccion": "Chubut y del Estero N° 896",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Lunes y Martes de 15:30 a 18:30" },
+        { "horario": "Jueves de 09:00 a 12:00" }
+      ]
     },
     {
-      "id": 10,
-      "nombre": "Ing. Huego"
+      "co": 26,
+      "nombre": "S. Colorada",
+      "tel": "02940 - 495163",
+      "cel": "2920 - 1520744",
+      "direccion": "Don Bosco 67",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Miércoles de 17:00 a 21:00" },
+        { "horario": "Jueves de 17:00 a 21:00" }
+      ]
     },
     {
-      "id": 11,
-      "nombre": "Ing. Jacobaci"
+      "co": 31,
+      "nombre": "Ramos Mexia",
+      "tel": "02940 - 495163",
+      "cel": "2920 - 15625453",
+      "direccion": "San Martín S/N",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Lunes a Viernes de 09:00 a 12:00" },
+        { "horario": "Lunes a Viernes de 16:30 a 19:30" }
+      ]
     },
     {
-      "id": 12,
-      "nombre": "Los Menucos"
+      "co": 32,
+      "nombre": "Valcheta",
+      "tel": "02940 - 495381",
+      "cel": "2920 - 15628054",
+      "direccion": "San Martín 745",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 09:00 a 12:00" }]
     },
     {
-      "id": 13,
-      "nombre": "Maquinchao"
+      "co": 34,
+      "nombre": "San Antonio O.",
+      "tel": "02934 - 422639",
+      "cel": "2920 - 15628054",
+      "cp": 421010,
+      "direccion": "Ramos Mexia 261",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 10:00 a 13:00" }]
     },
     {
-      "id": 14,
-      "nombre": "Ramos Mexia"
+      "co": 36,
+      "nombre": "Viedma",
+      "tel": "02920 - 421766",
+      "cel": "2920 - 15629903",
+      "direccion": "Urquiza 731",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 15:30 a 19:30" }]
     },
     {
-      "id": 15,
-      "nombre": "Rio Colorado"
+      "co": 37,
+      "nombre": "Bariloche",
+      "tel": "02944 - 241844",
+      "cel": "2920 - 15510253",
+      "direccion": "Albarracín 107",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Jueves de 10:00 a 14:00" },
+        { "horario": "Lunes a Viernes de 11:00 a 14:00" }
+      ]
     },
     {
-      "id": 16,
-      "nombre": "San Antonio Oeste"
+      "co": 43,
+      "nombre": "El Bolsón",
+      "tel": "02944 - 492695",
+      "cel": "2920 - 15511700",
+      "direccion": "Dorrego 459",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Lunes, Martes y Jueves de 09:00 a 12:00" }
+      ]
     },
     {
-      "id": 17,
-      "nombre": "San Carlos de Bariloche"
+      "co": 44,
+      "nombre": "I. Jacobacci",
+      "tel": "02940 - 432685",
+      "cel": "02944 - 15776531",
+      "direccion": "Sarmiento 856",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 09:00 a 12:00" }]
     },
     {
-      "id": 18,
-      "nombre": "Sierra Colorada"
+      "co": 45,
+      "nombre": "Maquinchao",
+      "tel": "02940 - 432685",
+      "cel": "02940 - 15776531",
+      "direccion": "Coop. Telegráfica Julio A. Roca s/n",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 18:00 a 21:00" }]
     },
     {
-      "id": 19,
-      "nombre": "Sierra Grande"
+      "co": 46,
+      "nombre": "Sierra Grande",
+      "tel": "02934 - 481045",
+      "cel": "2920 - 15519690",
+      "direccion": "Fernando Bajos",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Jueves de 16:30 a 19:30" }]
     },
     {
-      "id": 20,
-      "nombre": "Valcheta"
+      "co": 47,
+      "nombre": "Lamarque",
+      "tel": "02946 - 497013",
+      "cel": "2920 - 15600368",
+      "direccion": "Sarmiento 851",
+      "email": null,
+      "casa_horarios": [
+        { "horario": "Martes, Miércoles y Viernes de 09:00 a 12:00" }
+      ]
     },
     {
-      "id": 21,
-      "nombre": "Viedma"
-    },
-    {
-      "id": 22,
-      "nombre": "Villa Regina"
+      "co": 48,
+      "nombre": "Valle Medio",
+      "tel": "02946 - 422286",
+      "cel": "2920 - 15629588",
+      "direccion": "Alfonzina Storni",
+      "email": null,
+      "casa_horarios": [{ "horario": "Lunes a Viernes de 09:00 a 12:00" }]
     }
   ]
 }

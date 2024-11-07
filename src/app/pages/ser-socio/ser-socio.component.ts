@@ -27,9 +27,7 @@ export class SerSocioComponent {
 
   async ngOnInit() {
     try {
-      this.delegaciones = (
-        await firstValueFrom(this.service.getCasas())
-      ).result;
+      this.delegaciones = await firstValueFrom(this.service.getCasas());
       window.scrollTo(0, 0);
       this.years = getDateDifference().yearsDifference;
     } catch (error) {
@@ -48,13 +46,5 @@ export class SerSocioComponent {
   }
   onSendForm() {
     this.loading.isLoading(true);
-    setTimeout(() => {
-      this.loading.isLoading(false);
-      this.dialog.confirmAction(
-        'Confirmación de envío',
-        '¡El formulario se envió con éxito!',
-        () => {}
-      );
-    }, 2000);
   }
 }

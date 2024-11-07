@@ -23,7 +23,7 @@ export class DelegacionesComponent {
   ngOnInit() {
     this.service.getCasas().subscribe((data) => {
       console.log(data);
-      this.casas_mutuales = [...this.casas_mutuales, ...data.result];
+      this.casas_mutuales = [...this.casas_mutuales, ...data];
       this.casas_mutuales.sort((a, b) => a.co - b.co);
     });
     this.serviceD.getDelegaciones().subscribe((data) => {

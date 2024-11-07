@@ -17,3 +17,5 @@ export * from './router.service';
 export * from './turismos.service';
 
 export * from './delegaciones.service';
+
+export * from './mail.service';

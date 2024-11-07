@@ -4,6 +4,7 @@ import { NoticiasService } from '../../services/noticias.service';
 import { NoticiasI } from '../../interfaces/noticias.interface';
 import { Router } from '@angular/router';
 import { environment } from '../../../environments/environment';
+import { HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'carousel',
@@ -19,7 +20,9 @@ export class CarouselComponent {
   private readonly router = inject(Router);
 
   ngAfterViewInit() {
-    this.service.getNoticias().subscribe({
+    let params = new HttpParams();
+    params = params.set('activo', 1);
+    this.service.getNoticias(params).subscribe({
       next: (data) => {
         this.images = data.result;
       },

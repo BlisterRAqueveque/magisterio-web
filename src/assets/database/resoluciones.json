@@ -5,10 +5,12 @@
       "id": 1,
       "resol": "32/11",
       "visto": "La inquietud manifestada por una gran cantidad de Delegadas/os y Empleadas/os por solicitar vacaciones en la temporada estival para atender necesidades de índole familiar",
-      "considerando": [
-        "La necesidad de dar algún  reconocimiento ante las solicitudes, sin dejar de atender también, las necesidades de los Sres. Asociados/as"
+      "consideraciones": [
+        {
+          "consideracion": "La necesidad de dar algún  reconocimiento ante las solicitudes, sin dejar de atender también, las necesidades de los Sres. Asociados/as"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "otorgar vacaciones a las/os Delegadas/os durante el período comprendido entre el 09/01/12 y el 27/11/12  en coincidencia con el Periodo de vacaciones concedido por el C.P.E. a descontar de  los días de la Licencia Anual"
@@ -37,12 +39,18 @@
       "id": 2,
       "resol": "33/11",
       "visto": "El análisis realizado en reunión de Consejo Directivo de la Mutual sobre el convenio firmado con el IMPS",
-      "considerando": [
-        "Que el monto límite de compra (cupo) es de ½ (equivalente a $600) ",
-        "Que este cupo resulta insuficiente para concretar dicho convenio",
-        "Que es facultad del CD resolver cuestiones inherentes a la Administración de la entidad establecido en su artículo 23 del estatuto social"
+      "consideraciones": [
+        {
+          "consideracion": "Que el monto límite de compra (cupo) es de ½ (equivalente a $600) "
+        },
+        {
+          "consideracion": "Que este cupo resulta insuficiente para concretar dicho convenio"
+        },
+        {
+          "consideracion": "Que es facultad del CD resolver cuestiones inherentes a la Administración de la entidad establecido en su artículo 23 del estatuto social"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "crear un monto límite de compra específico  para turismo con el valor de 1 U/G (equivalente a $1200)"
@@ -71,12 +79,18 @@
       "id": 3,
       "resol": "34/11",
       "visto": "El plan de financiamiento establecido para las compras de Operativo Blanco de la Mutual para el Magisterio Rionegrino establecido en la Resolución Nº 03/10",
-      "considerando": [
-        "Que el monto límite de compra (cupo) es de ½ (equivalente a $600)",
-        "Que los valores actualizados de la mercadería en cuestión son considerablemente más elevados",
-        "Que es facultad del CD resolver cuestiones inherentes a la Administración de la entidad establecido en su artículo 23 del estatuto social"
+      "consideraciones": [
+        {
+          "consideracion": "Que el monto límite de compra (cupo) es de ½ (equivalente a $600)"
+        },
+        {
+          "consideracion": "Que los valores actualizados de la mercadería en cuestión son considerablemente más elevados"
+        },
+        {
+          "consideracion": "Que es facultad del CD resolver cuestiones inherentes a la Administración de la entidad establecido en su artículo 23 del estatuto social"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "dejar sin efecto la Resolución Nº 03/10"
@@ -105,11 +119,15 @@
       "id": 4,
       "resol": "02/12",
       "visto": "La necesidad de efectivizar los reintegros sobre las practicas Odontologicas en general.",
-      "considerando": [
-        "Que es atribución del Consejo Directivo reglamentar el funcionamiento administrativo de la Mutual",
-        "Que es intención de este Consejo Directivo atender las necesidades de los/as asociados/as brindando la mayor cobertura posible sobre los reintegros presentados, y agilizar los trámites pertinentes"
+      "consideraciones": [
+        {
+          "consideracion": "Que es atribución del Consejo Directivo reglamentar el funcionamiento administrativo de la Mutual"
+        },
+        {
+          "consideracion": "Que es intención de este Consejo Directivo atender las necesidades de los/as asociados/as brindando la mayor cobertura posible sobre los reintegros presentados, y agilizar los trámites pertinentes"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "que a partir del día  1 de Marzo del corriente año  se pondrá en vigencia el código único para reintegrar valores sobre todas las prestaciones Odontológicas (78.01.01), correspondiendo al 20% del total de la factura"
@@ -142,10 +160,12 @@
       "id": 5,
       "resol": "03/12",
       "visto": "La renuncia presentada por la Sra. De Rioja, Iris Elda, DNI Nº 5.704.811 como 3er. Encargada Suplente de la Casa Mutual Cipolletti.",
-      "considerando": [
-        "Que  fue cursada la nota  a la MMR  renunciando por razones particulares, que le impiden disponer de tiempo para el desemeño de su cargo"
+      "consideraciones": [
+        {
+          "consideracion": "Que  fue cursada la nota  a la MMR  renunciando por razones particulares, que le impiden disponer de tiempo para el desemeño de su cargo"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "aceptar la renuncia de la Asociada  De RIOJA, Iris Elda"
@@ -174,11 +194,15 @@
       "id": 6,
       "resol": "04/12",
       "visto": "La renuncia presentada por la Sra.Brillo, Mírta Raquel., DNI Nº 5.978.133, 3er. Encargada Suplente de Casa Mutual Viedma.",
-      "considerando": [
-        "Que  fue cursada la nota  a la MMR renunciando como Asociada por razones particulares en el mes de Diciembre de 2011",
-        "Que naturalmente queda sin efecto su designación como Encargada de Casa Mutual Viedma en carácter de 3er. Suplente"
+      "consideraciones": [
+        {
+          "consideracion": "Que  fue cursada la nota  a la MMR renunciando como Asociada por razones particulares en el mes de Diciembre de 2011"
+        },
+        {
+          "consideracion": "Que naturalmente queda sin efecto su designación como Encargada de Casa Mutual Viedma en carácter de 3er. Suplente"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "aceptar la renuncia de la Asociada  Nº 645/9, BRILLO Mirta Raquel"
@@ -207,11 +231,15 @@
       "id": 7,
       "resol": "05/12",
       "visto": "Las actualizaciones salariales de los Docentes otorgadas por el Consejo Provincial de Educación.",
-      "considerando": [
-        "Que el Sueldo Básico de los Docentes tiene una relación directa con la Unidad de Gasto que establece la reglamentación de la Mutual",
-        "Que es facultad del Consejo Directivo resolver cuestiones inherentes a la Dirección y Administración de la Mutual para el Magisterio Rionegrino establecido en su Art. 23º del Estatuto Social"
+      "consideraciones": [
+        {
+          "consideracion": "Que el Sueldo Básico de los Docentes tiene una relación directa con la Unidad de Gasto que establece la reglamentación de la Mutual"
+        },
+        {
+          "consideracion": "Que es facultad del Consejo Directivo resolver cuestiones inherentes a la Dirección y Administración de la Mutual para el Magisterio Rionegrino establecido en su Art. 23º del Estatuto Social"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "que a partir del día 01 de Mayo de 2012 la U.G. tendrá un valor de $ 1.300 de acuerdo con el  punto 1 del Reglamento de  Normas de Compras y Contrataciones"
@@ -240,11 +268,15 @@
       "id": 8,
       "resol": "06/12",
       "visto": "La renuncia presentada por la Sra. SABADIN, Karina M. 1er. Delegada Suplente de Villa Regina.",
-      "considerando": [
-        "Que  fue cursada la nota  a la MMR renunciando  por razones particulares en el mes de Abril de 2012",
-        "Que esta renuncia deja vacante el mencionado cargo"
+      "consideraciones": [
+        {
+          "consideracion": "Que  fue cursada la nota  a la MMR renunciando  por razones particulares en el mes de Abril de 2012"
+        },
+        {
+          "consideracion": "Que esta renuncia deja vacante el mencionado cargo"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "aceptar la renuncia de la Asociada  Nº 16159/4, SABADIN, Karina M."
@@ -270,53 +302,21 @@
       "fecha": "17 de Abril de 2012"
     },
     {
-      "id": 9,
-      "resol": "07/12",
-      "visto": "El análisis realizado en reunión de Consejo Directivo de la Mutual sobre el acceso de los/as asociados/as  a los diferentes servicios.",
-      "considerando": [
-        "Que la intención de sus miembros es llegar a sus asociados de una forma más equitativa a toda su masa societaria",
-        "Que es necesaria una diferenciación entre los Asociados  Docentes Activos y la población de Docentes Jubilados en el uso de sus servicios en una forma más equitativa",
-        "Que es atribución de Consejo Directivo atender las necesidades de los mismos"
-      ],
-      "articulo": [
-        {
-          "art": 1,
-          "desc": "a partir del 1 de Mayo de 2012, ofrecer a los Asociados Jubilados Docentes la posibilidad de presentar 2 (dos) comprobantes por mes en el Servicio de reintegro de Actividades Culturales y/o Deportivas"
-        },
-        {
-          "art": 2,
-          "desc": "mantener la misma modalidad de tramitación que está establecida"
-        },
-        {
-          "art": 3,
-          "desc": "determinar como tope individual  el monto de $ 110,00 y tope por grupo familiar $ 160,00"
-        },
-        {
-          "art": 4,
-          "desc": "la presente deberá ser incluida en la Memoria Anual"
-        },
-        {
-          "art": 5,
-          "desc": "la presente queda Ad Referéndum de Asamblea Ordinaria"
-        },
-        {
-          "art": 6,
-          "desc": "comuníquese, notifíquese y archívese"
-        }
-      ],
-      "lugar": "Viedma",
-      "fecha": "17 de Abril de 2012"
-    },
-    {
       "id": 10,
       "resol": "07/12",
       "visto": "El análisis realizado en reunión de Consejo Directivo de la Mutual sobre el acceso de los/as asociados/as  a los diferentes servicios.",
-      "considerando": [
-        "Que la intención de sus miembros es llegar a sus asociados de una forma más equitativa a toda su masa societaria",
-        "Que es necesaria una diferenciación entre los Asociados  Docentes Activos y la población de Docentes Jubilados en el uso de sus servicios en una forma más equitativa",
-        "Que es atribución de Consejo Directivo atender las necesidades de los mismos"
+      "consideraciones": [
+        {
+          "consideracion": "Que la intención de sus miembros es llegar a sus asociados de una forma más equitativa a toda su masa societaria"
+        },
+        {
+          "consideracion": "Que es necesaria una diferenciación entre los Asociados  Docentes Activos y la población de Docentes Jubilados en el uso de sus servicios en una forma más equitativa"
+        },
+        {
+          "consideracion": "Que es atribución de Consejo Directivo atender las necesidades de los mismos"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "a partir del 1 de Mayo de 2012, ofrecer a los Asociados Jubilados Docentes la posibilidad de presentar 2 (dos) comprobantes por mes en el Servicio de reintegro de Actividades Culturales y/o Deportivas"
@@ -349,10 +349,12 @@
       "id": 11,
       "resol": "08/12",
       "visto": "La intención de este Consejo Directivo de ampliar la Familia Mutual, intentando llegar a un mayor número de Docentes que puedan acceder a nuestros beneficios.",
-      "considerando": [
-        "Que en el tratamiento del tema en las  Reuniones de Consejo Directivo, la decisión fue unánime"
+      "consideraciones": [
+        {
+          "consideracion": "Que en el tratamiento del tema en las  Reuniones de Consejo Directivo, la decisión fue unánime"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "prorrogar la Campaña de Asociación, sin período de carencia manteniendo UNICAMENTE el derecho a los SERVICIOS, es decir que quienes se asocien en este período tendrán los derechos del SOCIO PARTICIPANTE  - Art.9º del Estatuto Social- hasta el plazo en que reglamentariamente cumpla los plazos estipulados en el mismo y por un período a determinar por el Consejo Directivo"
@@ -377,10 +379,12 @@
       "id": 12,
       "resol": "09/12",
       "visto": "Los ajustes salariales de los Docentes otorgados por el Consejo Provincial de Educación y que en una relación directamente proporcional se van incrementando los porcentajes de reintegro de los servicios que presta nuestra Mutual.",
-      "considerando": [
-        "Que es facultad del Consejo Directivo resolver cuestiones inherentes a la Dirección y Administración de la Mutual para el Magisterio Rionegrino establecido en su Art. 23º del Estatuto Social"
+      "consideraciones": [
+        {
+          "consideracion": "Que es facultad del Consejo Directivo resolver cuestiones inherentes a la Dirección y Administración de la Mutual para el Magisterio Rionegrino establecido en su Art. 23º del Estatuto Social"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "que a partir del día 1 de Mayo de 2012 el monto límite de Compra (CUPO) se establece en  $ 700,00."
@@ -409,11 +413,15 @@
       "id": 13,
       "resol": "10/12",
       "visto": "El análisis realizado en reunión de Consejo Directivo de la Mutual para el Magisterio Rionegrino sobre la actualización de las tarifas de las Casas Mutuales y Complejo, realizada oportunamente.",
-      "considerando": [
-        "Que en atención a la necesidad de actualizar las tarifas ya que guardan una directa proporción con las variaciones de la U.G.",
-        "Que es necesario resolver cuestiones inherentes a la Dirección y Administración de la MMR establecido en su Art. 23º del Estatuto Social"
+      "consideraciones": [
+        {
+          "consideracion": "Que en atención a la necesidad de actualizar las tarifas ya que guardan una directa proporción con las variaciones de la U.G."
+        },
+        {
+          "consideracion": "Que es necesario resolver cuestiones inherentes a la Dirección y Administración de la MMR establecido en su Art. 23º del Estatuto Social"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "rever las tarifas fijadas oportunamente y actualizarlas en función del aumento del Sueldo Básico Docente, que da valor a la  Unidad de Gasto de la MMR, actualmente en $ 1.300,00"
@@ -446,11 +454,15 @@
       "id": 14,
       "resol": "11/12",
       "visto": "La Resolución Nº 20/11 del Registro del Consejo Directivo de la Mutual para el Magisterio Rionegrino.",
-      "considerando": [
-        "Que en atención a la necesidad de actualizar las tarifas ya que guardan una directa proporción con las variaciones de la U.G.",
-        "Que es necesario resolver cuestiones inherentes a la Dirección y Administración de la MMR establecido en su Art. 23º del Estatuto Social"
+      "consideraciones": [
+        {
+          "consideracion": "Que en atención a la necesidad de actualizar las tarifas ya que guardan una directa proporción con las variaciones de la U.G."
+        },
+        {
+          "consideracion": "Que es necesario resolver cuestiones inherentes a la Dirección y Administración de la MMR establecido en su Art. 23º del Estatuto Social"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "establecer a partir del día 01 de Mayo de 2012 el valor del aporte mínimo según corresponda la categoría de asociado/a de acuerdo a la escala: Categoría “A”…2,02%....monto mínimo a depositar por cuota social…$ 65,00 (5% de U.G.) Cat. “B” y “C”..3,03%....monto mínimo a depositar por cuota social$ 91,00 (7% de U.G.) Cat. “D”……...4,04%....monto mínimo a depositar por cuota social…$ 117,00 (9% de U.G.)"
@@ -479,11 +491,15 @@
       "id": 15,
       "resol": "12/12",
       "visto": "El análisis realizado en reunión de Consejo Directivo de la Mutual para el Magisterio Rionegrino sobre la necesidad de agilizar los trámites que deben realizar los/as asociados/as.",
-      "considerando": [
-        "Que el reintegro de las prestaciones que se realizan en las distintas cada vez  son mayores",
-        "Que la propia MMR ha ido incrementando dichos valores y mejorando los servicios reintegrables"
+      "consideraciones": [
+        {
+          "consideracion": "Que el reintegro de las prestaciones que se realizan en las distintas cada vez  son mayores"
+        },
+        {
+          "consideracion": "Que la propia MMR ha ido incrementando dichos valores y mejorando los servicios reintegrables"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "incrementar a partir del mes de Mayo 2012 el valor considerado tope a reintegrar en efectivo en cada Delegación a $ 200,00.-"
@@ -512,12 +528,18 @@
       "id": 16,
       "resol": "13/12",
       "visto": "El análisis realizado en reunión de Consejo Directivo de la Mutual sobre el convenio firmado con el IMPS.",
-      "considerando": [
-        "Que el monto límite de compra (cupo) es de ½ (equivalente a $600)",
-        "Que este cupo resulta insuficiente para concretar dicho convenio",
-        "Que es facultad del CD resolver cuestiones inherentes a la Administración de la entidad establecido en su artículo 23 del estatuto social"
+      "consideraciones": [
+        {
+          "consideracion": "Que el monto límite de compra (cupo) es de ½ (equivalente a $600)"
+        },
+        {
+          "consideracion": "Que este cupo resulta insuficiente para concretar dicho convenio"
+        },
+        {
+          "consideracion": "Que es facultad del CD resolver cuestiones inherentes a la Administración de la entidad establecido en su artículo 23 del estatuto social"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "crear un monto límite de compra específico  para turismo con el valor de 1 U/G (equivalente a $1300,-)"
@@ -546,11 +568,15 @@
       "id": 17,
       "resol": "14/12",
       "visto": "La necesidad de efectuar una actualización en los valores de reintegro por prestaciones.",
-      "considerando": [
-        "Que es atribución del Consejo Directivo reglamentar el funcionamiento administrativo de la Mutual",
-        "Que es intención de este Consejo Directivo atender las necesidades de los/as asociados/as brindando la mayor cantidad  posible de servicios"
+      "consideraciones": [
+        {
+          "consideracion": "Que es atribución del Consejo Directivo reglamentar el funcionamiento administrativo de la Mutual"
+        },
+        {
+          "consideracion": "Que es intención de este Consejo Directivo atender las necesidades de los/as asociados/as brindando la mayor cantidad  posible de servicios"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "se efectivizará a partir del mes de Junio 2012 el reintegro por Óptica considerando: por ejercicio económico para el activo y participante, el reconocimiento del 40% del valor de los anteojos recetados o lentes de contacto, siempre que no supere el 50% de UG, tenga o no familiares a cargo. El tope se ampliará hasta 1 U.G. en caso de tener un miembro familiar discapacitado que haga uso del servicio de óptica"
@@ -579,11 +605,15 @@
       "id": 18,
       "resol": "15/12",
       "visto": "La renuncia presentada por la Sra.Escobar, María A., L.C. Nº 5.704.971.",
-      "considerando": [
-        "Que  fue cursada la nota  a la MMR renunciando como 1er. Encargada Suplente a la Casa Mutual Cipolletti",
-        "Que  esta presentación se recibe constando que la presenta por incompatibilidad de caracteres con la Encargada titular"
+      "consideraciones": [
+        {
+          "consideracion": "Que  fue cursada la nota  a la MMR renunciando como 1er. Encargada Suplente a la Casa Mutual Cipolletti"
+        },
+        {
+          "consideracion": "Que  esta presentación se recibe constando que la presenta por incompatibilidad de caracteres con la Encargada titular"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "aceptar la renuncia de la Asociada  Nº2063/0, ESCOBAR, María"
@@ -612,12 +642,18 @@
       "id": 19,
       "resol": "16/12",
       "visto": "La intención de este Consejo Directivo de restablecer paulatinamente los servicios que brindara oportunamente la MMR",
-      "considerando": [
-        "Que es obligación del mismo procurar  la administración de los fondos de la Institución",
-        "Que la implementación de los SEM por Viaje o Turismo o por Otras Razones será distribuido en forma proporcional y equitativa entre las Delegaciones y serán otorgados en forma quincena",
-        "Que en el tratamiento del tema en las  Reuniones de Consejo Directivo, la decisión fue unánime decidiendo abrir una cuenta especial destinada para tal fin de $ 150.000,- para un mejor control de movimiento del capital"
+      "consideraciones": [
+        {
+          "consideracion": "Que es obligación del mismo procurar  la administración de los fondos de la Institución"
+        },
+        {
+          "consideracion": "Que la implementación de los SEM por Viaje o Turismo o por Otras Razones será distribuido en forma proporcional y equitativa entre las Delegaciones y serán otorgados en forma quincena"
+        },
+        {
+          "consideracion": "Que en el tratamiento del tema en las  Reuniones de Consejo Directivo, la decisión fue unánime decidiendo abrir una cuenta especial destinada para tal fin de $ 150.000,- para un mejor control de movimiento del capital"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "restablecer parcialmente el SEM por otras Razones o Viaje o por Turismo. Con un tope de 1 UG ($1300,-)  a reintegrar en 6(seis) cuotas mensuales como máximo por Asociado/a  y por Ejercicio Económico"
@@ -646,10 +682,12 @@
       "id": 20,
       "resol": "17/12",
       "visto": "La inquietud manifestada por una gran cantidad de Delegados/as y Empleados/as por solicitar vacaciones en la temporada invernal",
-      "considerando": [
-        "La necesidad de dar algun reconocimiento ante las solicitudes, sin dejar de atender tambien, las necesidad de los Sres. Asociados/as"
+      "consideraciones": [
+        {
+          "consideracion": "La necesidad de dar algun reconocimiento ante las solicitudes, sin dejar de atender tambien, las necesidad de los Sres. Asociados/as"
+        }
       ],
-      "articulo": [
+      "articulos": [
         {
           "art": 1,
           "desc": "otorgar vacaciones a las/os delegados/as la semana del 23/07 al 27/07/12 inclusive, en coincidencia con la segunda semana del Receso Escolar de Invierno concedido por el C.P.E. a descontar de los dias de la Licencia Anual"
@@ -673,15 +711,6 @@
       ],
       "lugar": "Viedma",
       "fecha": "15 de Mayo de 2012"
-    },
-    {
-      "id": 21,
-      "resol": "2900/12",
-      "visto": "Informamos que la Resolución que otorga el no computo de inasistencia a Autoridades de mesa y delegados en actividad es la numero 2900/12",
-      "considerando": [],
-      "articulo": [],
-      "lugar": "",
-      "fecha": ""
     }
   ],
   "msg": "Approved"

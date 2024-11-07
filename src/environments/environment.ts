@@ -1,5 +1,7 @@
+const url = 'https://magisterio.hvdevs.com/';
+
 export const environment = {
-  apiURL: 'http://localhost:3045/api/',
-  imgURL: 'http://localhost:3045/uploads/',
-  webURL: 'http://localhost:4200/assets/database',
+  apiURL: `${url}api/`,
+  imgURL: `${url}uploads/`,
+  webURL: 'https://web.mutualmagisterio.org.ar/',
 };

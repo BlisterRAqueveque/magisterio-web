@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { environment } from '../../environments/environment';
 import { ResponseI } from '../interfaces/response.interface';
@@ -20,8 +20,8 @@ export class NoticiasService {
     );
   }
 
-  getNoticias() {
-    return this.http.get<ResponseI>(this.url).pipe(
+  getNoticias(params?: HttpParams) {
+    return this.http.get<ResponseI>(this.url, { params }).pipe(
       catchError((e) => handleError(e)),
       map((data) => data.result as { result: NoticiasI[]; count: number })
     );

@@ -12,10 +12,10 @@ export class CasaMutualService {
   private readonly url = environment.apiURL;
 
   getCasas() {
-    const direction = `${this.url}casas-mutuales`;
+    const direction = `${this.url}casas-mutuales/web/service`;
     return this.http.get<ResponseI>(direction).pipe(
       catchError((e) => handleError(e)),
-      map((data) => data.result as { result: CasaMutualI[]; count: number })
+      map((data) => data.result as CasaMutualI[])
     );
   }
 }

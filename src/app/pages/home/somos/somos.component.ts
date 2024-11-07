@@ -5,6 +5,7 @@ import { ConsejoDirectivoService } from '../../../services/consejo.directivo.ser
 import { firstValueFrom } from 'rxjs';
 import { JuntaFiscalizacionI } from '../../../interfaces/junta.fiscalizacion.interface';
 import { ConsejoDirectivoI } from '../../../interfaces/consejo.directivo.interface';
+import { HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'somos',
@@ -26,11 +27,13 @@ export class SomosComponent {
 
   async getData() {
     try {
+      let params = new HttpParams();
+      params = params.set('sortBy', 'ASC');
       this.junta = (
-        await firstValueFrom(this.serviceJunta.getConsejo())
+        await firstValueFrom(this.serviceJunta.getConsejo(params))
       ).result;
       this.consejo = (
-        await firstValueFrom(this.serviceConsejo.getConsejo())
+        await firstValueFrom(this.serviceConsejo.getConsejo(params))
       ).result;
     } catch (error) {
       console.error(error);
